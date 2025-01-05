@@ -20,6 +20,9 @@ importers:
 
   apps/docs:
     dependencies:
+      '@astrojs/mdx':
+        specifier: ^4.0.3
+        version: 4.0.3(astro@5.1.2(@types/node@20.17.6)(jiti@2.4.2)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.7.0))
       '@astrojs/starlight':
         specifier: ^0.30.3
         version: 0.30.3(astro@5.1.2(@types/node@20.17.6)(jiti@2.4.2)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.7.0))
