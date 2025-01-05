@@ -1,5 +1,5 @@
 {
-  "name": "Nota-Set",
+  "name": "nota-set",
   "private": true,
   "scripts": {
     "build": "turbo build",
