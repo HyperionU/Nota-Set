@@ -1,22 +1,24 @@
 ---
-import { ModeToggle } from "./ModeToggle";
+import { ModeToggle } from "@/components/ModeToggle";
+import { NavMenu } from "@/components/Navigation";
+import { Icon } from "astro-icon/components"
 ---
 
 <nav class="flex w-full border-b-2 text-foreground divide-x">
     <div class="flex items-center justify-start p-8 gap-4 text-3xl basis-1/3">
         <a href="/" aria-label="HyperionU - Home">
-            <!-- <Icon name="lucide:boxes" />-->
+            <Icon name="lucide:boxes" />
         </a>
     </div>
     <div class="flex items-center justify-center p-8 gap-12 basis-1/3">
-        <!-- <NavMenu client:load /> -->
+        <NavMenu client:load />
     </div>
     <div class="flex items-center justify-center p-8 gap-12 grow">
         <a href="https://github.com/HyperionU" target="_blank" aria-label="HyperionU - Github">
-            <!-- <Icon name="lucide:github" /> -->
+            <Icon name="lucide:github" />
         </a>
         <a href="https://codepen.io/korvid" target="_blank" aria-label="HyperionU - Codepen">
-            <!-- <Icon name="lucide:codepen" /> -->
+            <Icon name="lucide:codepen" />
         </a>
     </div>
     <div class="flex items-center justify-start p-8 gap-4 grow">
