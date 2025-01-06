@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota-Set - Socials 10</title>
+    <link rel="stylesheet" href="assets/style-ss10.css">
+    <script src="https://kit.fontawesome.com/7625037115.js" crossorigin="anonymous"></script>
+    <script>
+      let activeIndex = 0;
+
+      const slides = document.getElementsByTagName("article");
+
+      const leftClick = () => {
+        const nextIndex =
+          activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
+
+        const currentSlide = document.querySelector(
+            `[data-index="${activeIndex}"]`
+          ),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "after";
+
+        nextSlide.dataset.status = "becoming-active-from-before";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+
+      const rightClick = () => {
+        const nextIndex =
+          activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0;
+
+        const currentSlide = document.querySelector(
+            `[data-index="${activeIndex}"]`
+          ),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "before";
+
+        nextSlide.dataset.status = "becoming-active-from-after";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+    </script>
+</head>
+
+<body>
+    <nav>
+        <item id="logo">
+            <a href="https://hyperionu.github.io">
+                <i class="fas fa-circle-nodes"></i>
+            </a>
+        </item>
+        <item id="links">
+            <a href="#">About</a>
+            <a href="https://hyperionu.github.io/faculties.html">Faculties</a>
+            <a href="https://hyperionu.github.io/projects.html">Projects</a>
+        </item>
+        <item id="socials">
+            <a href="https://github.com/HyperionU" target="_blank">
+                <i class="fab fa-github-alt"></i>
+            </a>
+            <a href="https://codepen.io/korvid" target="_blank">
+                <i class="fab fa-codepen"></i>
+            </a>
+        </item>
+        <item id="contacts">
+            <a href="https://hi.new/uofh" target="_blank">Contact</a>
+        </item>
+    </nav>
+    <main>
+        <article data-index="0" data-status="active">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+                <p>
+                    During the period from 1914 to 2000, Canada transitioned from a British colony to an independent
+                    nation and played a crucial role in significant global events.
+                </p>
+            </div>
+            <div class="a-title a-section">
+                <h2>Introduction</h2>
+            </div>
+            <div class="a-nav a-section">
+                <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="1" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+                <p>
+                    In Canada, we have a democracy where people elect their leaders and have a say in how the country is
+                    run.<br>
+                    The government's goal is to serve the people and make decisions that benefit everyone.
+                    <a href="ss10/gov.html">
+                        <i class="fas fa-landmark-flag"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="a-title a-section">
+                <h2>Unit I: Government</h2>
+            </div>
+            <div class="a-nav a-section">
+                <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="2" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+                <p>
+                    World War I, also known as the Great War, was a major conflict that took place from 1914 to 1918.
+                    Canada, as part of the British Empire, joined the war when Britain declared war on Germany. Many
+                    Canadians volunteered to fight, believing it was their duty to defend the British Empire.
+                    <a href="ss10/wwi.html">
+                        <i class="fas fa-person-military-rifle"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="a-title a-section">
+                <h2>Unit II: WWI</h2>
+            </div>
+            <div class="a-nav a-section">
+                <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="3" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+                <p>
+                    The interwar years, spanning from the end of World War I in 1918 to the beginning of World War II in
+                    1939, were a period of significant change, tension, and transformation across the globe.<br>
+                    <a href="ss10/int.html">
+                        <i class="fas fa-money-bill-wheat"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="a-title a-section">
+                <h2>Unit III: Interwar Years</h2>
+            </div>
+            <div class="a-nav a-section">
+                <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="4" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+                <p>
+                    World War II was a global conflict that took place from 1939 to 1945.<br>
+                    In Canada, World War II is remembered for the bravery and sacrifices of Canadian soldiers and
+                    civilians, shaping the country's commitment to peace and democracy.
+                    <a href="ss10/wwii.html">
+                        <i class="fas fa-circle-radiation"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="a-title a-section">
+                <h2>Unit IV: WWII</h2>
+            </div>
+            <div class="a-nav a-section">
+                <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="5" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+                <p>
+                    The early part of the Cold War (1945-1968) was a period of tension between the United States and the
+                    Soviet Union. <br>
+                    Throughout this period, Canada balanced its alliance with the United States and pursued an
+                    independent foreign policy at times.
+                    <a href="ss10/cold.html">
+                        <i class="fas fa-user-secret"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="a-title a-section">
+                <h2>Unit V: Early Cold War</h2>
+            </div>
+            <div class="a-nav a-section">
+                <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+        <article data-index="6" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+                <p>
+                    During the later part of the Cold War, Canada pursued a foreign policy emphasizing peacekeeping and
+                    diplomacy.
+                    Throughout, Canada maintained its commitment to peacekeeping, diplomacy, and multilateralism,
+                    contributing to global stability.
+                    <a href="ss10/can.html">
+                        <i class="fab fa-canadian-maple-leaf"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="a-title a-section">
+                <h2>Unit VI: Modern Canada</h2>
+            </div>
+            <div class="a-nav a-section">
+                <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

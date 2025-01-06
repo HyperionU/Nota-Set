@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota-Set - Pre-Calculus 12</title>
+    <link rel="stylesheet" href="assets/style-pc12.css">
+    <script src="https://kit.fontawesome.com/7625037115.js" crossorigin="anonymous"></script>
+    <script>
+      let activeIndex = 0;
+
+      const slides = document.getElementsByTagName("article");
+
+      const leftClick = () => {
+        const nextIndex =
+          activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
+
+        const currentSlide = document.querySelector(
+            `[data-index="${activeIndex}"]`
+          ),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "after";
+
+        nextSlide.dataset.status = "becoming-active-from-before";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+
+      const rightClick = () => {
+        const nextIndex =
+          activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0;
+
+        const currentSlide = document.querySelector(
+            `[data-index="${activeIndex}"]`
+          ),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "before";
+
+        nextSlide.dataset.status = "becoming-active-from-after";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+    </script>
+</head>
+<body>
+    <nav>
+        <item id="logo">
+            <a href="https://hyperionu.github.io">
+                <i class="fas fa-circle-nodes"></i>
+            </a>
+        </item>
+        <item id="links">
+            <a href="#">About</a>
+            <a href="https://hyperionu.github.io/faculties.html">Faculties</a>
+            <a href="https://hyperionu.github.io/projects.html">Projects</a>
+        </item>
+        <item id="socials">
+            <a href="https://github.com/HyperionU" target="_blank">
+                <i class="fab fa-github-alt"></i>
+            </a>
+            <a href="https://codepen.io/korvid" target="_blank">
+                <i class="fab fa-codepen"></i>
+            </a>
+        </item>
+        <item id="contacts">
+            <a href="https://hi.new/uofh" target="_blank">Contact</a>
+        </item>
+    </nav>
+    <main>
+        <article data-index="0" data-status="active">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                Math isn't just about numbers and symbols; it teaches us valuable skills like connecting ideas, being creative, communicating effectively, visualizing concepts, and reasoning logically. These skills are essential for solving complex problems from different angles, considering different solutions, and evaluating their effectiveness. When we develop these skills early in life, we can confidently apply math to everyday situations without any fear or doubt.
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Introduction</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="1" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                <strong>Graph Transformations</strong> involve modifying the appearance of a function's graph.<br>
+                Common transformations include shifting the graph horizontally or vertically, stretching or compressing it, and reflecting it across the x-axis or y-axis.<br> 
+                These transformations help visualize how changes in the function's equation affect its graph.
+                <a href="pc12/trans.html">
+                    <i class="fas fa-wave-square"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Unit I: Transformations</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="2" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                <strong>Polynomials</strong> are mathematical expressions with variables raised to non-negative integer powers.<br> 
+                They take the form of <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>+</mo><mo>&#x22ef;</mo><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></math> 
+                where <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mi>n</mi></msub><mo>,</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>,</mo><mo>&#x22ef;</mo><mo>,</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>0</mn></msub></math> are coefficients.<br> 
+                Polynomials are essential in algebra and can be used to represent various mathematical relationships.
+                <a href="pc12/poly.html">
+                    <i class="fas fa-superscript"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Unit II: Polynomials</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="3" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                <strong>Trigonometric Functions</strong> such as sine, cosine, and tangent, relate the angles of a right triangle to the ratios of its sides. Trigonometry is widely used in geometry, physics, and engineering to analyze and model periodic phenomena. 
+                <a href="pc12/trigf.html">
+                    <i class="fas fa-calculator"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Unit III: Trigonometric Functions</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="4" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                <strong>Graphing Trigonometric Functions</strong> such as sine, cosine, and tangent, extend the functions to all real numbers. They all have the same periodic behavior. 
+                <a href="pc12/graph.html">
+                    <i class="fas fa-wave-square"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Unit IV: Graphing Functions</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="5" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                <strong>Trigonometric Identities</strong> are equations involving trigonometric functions that are true for all values of the variables. Examples include the Pythagorean identities and angle-sum and angle-difference identities. These identities are crucial for simplifying expressions and solving trigonometric equations.
+                <a href="pc12/trigi.html">
+                    <i class="fas fa-calculator"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Unit V: Trigonometric Identities</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="6" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                <strong>Exponential Functions</strong> have the form <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mi>a</mi><mo>&#xb7;</mo><msup><mi>b</mi><mi>x</mi></msup></math>, where a is a constant and b is the base. These functions grow or decay exponentially.<br> 
+                <strong>Rational Functions</strong>, on the other hand, are ratios of polynomials. They have applications in modeling real-world phenomena and are important in calculus.
+                <a href="pc12/exp.html">
+                    <i class="fas fa-superscript"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Unit VI: Exponentals and Rationals</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="7" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                <strong>Logarithms</strong> are the inverse operations of exponentiation. The logarithm represents the exponent to which its base must be raised to obtain the power. Logarithmic functions help solve exponential equations and have applications in various fields, including finance and science.
+                <a href="pc12/log.html">
+                    <i class="fas fa-calculator"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Unit VII: Logarithms</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="8" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                Function Operations involves adding, subtracting, multiplying, dividing and composing together functions.
+                <a href="pc12/comp.html">
+                    <i class="fas fa-circle-dot"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Unit VIII: Function Operations</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+    </main>
+</body>
+</html>
