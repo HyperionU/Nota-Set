@@ -63,4 +63,33 @@
   body {
     @apply bg-background text-foreground;
   }
+  h1, h2, h3, h4 {
+    scroll-margin: 5rem;
+    letter-spacing: -0.025rem;
+  }
+  h2, h3, h4 {
+    font-weight: 600;
+  }
+  h1 {
+    @apply text-4xl font-extrabold lg:text-5xl
+  }
+  h2 {
+    @apply border-b pb-2 text-3xl first:mt-0
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  h4 {
+    @apply text-xl
+  }
+  p {
+    @apply leading-7 [&:not(:first-child)]:mt-6
+  }
+  blockquote {
+    @apply mt-6 border-l-2 pl-6 italic
+  }
+  code {
+    @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold
+  }
 }
