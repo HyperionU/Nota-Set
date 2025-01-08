@@ -32,6 +32,12 @@ importers:
       sharp:
         specifier: ^0.32.5
         version: 0.32.6
+      starlight-heading-badges:
+        specifier: ^0.4.0
+        version: 0.4.0(@astrojs/starlight@0.30.3(astro@5.1.2(@types/node@20.17.6)(jiti@2.4.2)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.7.0)))
+      starlight-package-managers:
+        specifier: ^0.9.0
+        version: 0.9.0(@astrojs/starlight@0.30.3(astro@5.1.2(@types/node@20.17.6)(jiti@2.4.2)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.7.0)))
 
   apps/www:
     dependencies:
@@ -3697,6 +3703,18 @@ packages:
 
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
+
+  starlight-heading-badges@0.4.0:
+    resolution: {integrity: sha512-qHxbZcqaz+01y/XKuA5xfbTncUl5Vo0/kY0f+Wi+xvuJ8MUDefZHhL2io3KdoR0ekRDn8COtj/hwE+zL+QcEGA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.30.0'
+
+  starlight-package-managers@0.9.0:
+    resolution: {integrity: sha512-iDChnj8hCUYH2s5hFMnpEiCYHUAuVivh2jvFgFJvUmViEEOdA24ZXrUhQhA/qg2KULCgn17F2cKWf3vhvIcl0w==}
+    engines: {node: '>=18.17.1'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.22.0'
 
   stream-replace-string@2.0.0:
     resolution: {integrity: sha512-TlnjJ1C0QrmxRNrON00JvaFFlNh5TTG00APw23j74ET7gkQpTASi6/L2fuiav8pzK715HXtUeClpBTw2NPSn6w==}
@@ -8594,6 +8612,19 @@ snapshots:
   space-separated-tokens@2.0.2: {}
 
   sprintf-js@1.0.3: {}
+
+  starlight-heading-badges@0.4.0(@astrojs/starlight@0.30.3(astro@5.1.2(@types/node@20.17.6)(jiti@2.4.2)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.7.0))):
+    dependencies:
+      '@astrojs/markdown-remark': 6.0.1
+      '@astrojs/starlight': 0.30.3(astro@5.1.2(@types/node@20.17.6)(jiti@2.4.2)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.7.0))
+      github-slugger: 2.0.0
+      unist-util-visit: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
+
+  starlight-package-managers@0.9.0(@astrojs/starlight@0.30.3(astro@5.1.2(@types/node@20.17.6)(jiti@2.4.2)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.7.0))):
+    dependencies:
+      '@astrojs/starlight': 0.30.3(astro@5.1.2(@types/node@20.17.6)(jiti@2.4.2)(rollup@4.29.1)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.7.0))
 
   stream-replace-string@2.0.0: {}
 
