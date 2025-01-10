@@ -35,7 +35,7 @@ export const projectList: Project[] = [
   },
   {
     title: "Calculus Games",
-    href: "/calc",
+    href: "https://uofh.ca/calc",
     description: "Our custom versions of games, based on Calculus",
   },
   {
