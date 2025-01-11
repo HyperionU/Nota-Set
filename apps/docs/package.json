@@ -1,5 +1,5 @@
 {
-  "name": "nota-set-docs",
+  "name": "@nota-set/docs",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
