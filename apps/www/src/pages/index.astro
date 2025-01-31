@@ -1,18 +1,59 @@
 ---
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import MainLayout from "@/layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Nota-Set | U of H">
-  <h1>Astro</h1>
-  <ul>
-    <li>
-      <a href="pc11.html">Pre-Calculus 11</a>
-    </li>
-    <li>
-      <a href="ss10.html">Socials 10</a>
-    </li>
-    <li>
-      <a href="pc12.html">Pre-Calculus 12</a>
-    </li>
-  </ul>
+  <main class="grid items-center grid-cols-3 gap-4">
+    <header class="text-center col-span-3 p-8">
+      <h1>Nota-Set</h1>
+    </header>
+    <Card>
+      <CardHeader className="text-center">
+        <h2>Socials 10</h2>
+      </CardHeader>
+      <CardContent>
+        <p>
+          During the period from 1914 to 2000, Canada transitioned from a British colony to an independent nation and played a crucial role in significant global events.
+        </p>
+      </CardContent>
+      <CardFooter>
+        <Button>
+          <a href="ss10.html">Enter</a>
+        </Button>
+      </CardFooter>
+    </Card>
+    <Card>
+      <CardHeader className="text-center">
+        <h2>Pre-Calculus 11</h2>
+      </CardHeader>
+      <CardContent>
+        <p>
+          Math isn't just about numbers and symbols; it teaches us valuable skills like connecting ideas, being creative, communicating effectively, visualizing concepts, and reasoning logically.
+        </p>
+      </CardContent>
+      <CardFooter>
+        <Button>
+          <a href="pc11.html">Enter</a>
+        </Button>
+      </CardFooter>
+    </Card>
+    <Card>
+      <CardHeader className="text-center">
+        <h2>Pre-Calculus 12</h2>
+      </CardHeader>
+      <CardContent>
+        <p>
+          To put it simply, the fundamental root of all the content in Pre-Calculus 12 is the function transformation, but what exactly is a transformation?
+        </p>
+      </CardContent>
+      <CardFooter>
+        <Button>
+          <a href="pc12.html">Enter</a>
+        </Button>
+      </CardFooter>
+    </Card>
+    <a href="test.html">test</a>
+  </main>
 </MainLayout>
