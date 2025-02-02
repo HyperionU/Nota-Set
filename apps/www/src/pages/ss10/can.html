@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socials 10 - Modern Canada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+      :root {
+        --text: white;
+        --mint: 72.97% 0.144 170.2;
+        /* "Slate": new background color */
+        --background: 13.63% 0.036 259.2;
+        /* "Space Cadet": new primary color for NKMNT neo */
+        --primary: oklch(24.66% 0.064 269.76);
+        /* "Cardinal": new secondary color for NKNMT neo */
+        --cardinal: 43.58% 0.14 17.33;
+        --napoli: 90.61% 0.139 98.34;
+      }
+
+      body {
+        background-color: oklch(var(--background));
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+        margin: 0;
+        --color: var(--_font-color, --text);
+        --pattern-color: var(--_col, --_font-color);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2,
+      h3,
+      a,
+      p,
+      span {
+        font-family: "Geist", system-ui, sans-serif;
+        color: var(--color);
+      }
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: oklch(var(--pattern-color));
+        }
+      }
+
+      /*Navbar Specific Styling*/
+      nav {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid var(--primary);
+        --_font-color: var(--text);
+      }
+
+      item {
+        padding: 2rem;
+        display: flex;
+        gap: 1rem;
+        border-left: 1px solid var(--primary);
+        align-items: center;
+        justify-content: center;
+      }
+
+      #logo {
+        justify-content: flex-start;
+        font-size: 2.5rem;
+      }
+
+      #logo,
+      #links {
+        flex-basis: calc(100% / 3);
+      }
+
+      #social,
+      #contact {
+        flex-grow: 1;
+      }
+
+      #links,
+      #social {
+        gap: 3rem;
+      }
+
+      body {
+        overflow: hidden;
+        --_font-color: var(--text);
+        --_col: var(--cardinal);
+      }
+
+      /* main (lander) styles */
+
+      main {
+        flex-grow: 1;
+        position: relative;
+      }
+
+      main > article {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transition: transform 0.4s ease;
+      }
+
+      main > article[data-status="inactive"] {
+        transform: translateX(-100%);
+        transition: none;
+      }
+
+      main > article[data-status="active"] {
+        transform: translateX(0%);
+      }
+
+      main > article[data-status="before"] {
+        transform: translateX(-100%);
+      }
+
+      main > article[data-status="after"] {
+        transform: translateX(100%);
+      }
+
+      main > article[data-status="becoming-active-from-before"] {
+        transform: translateX(-100%);
+        transition: none;
+      }
+
+      main > article[data-status="becoming-active-from-after"] {
+        transform: translateX(100%);
+        transition: none;
+      }
+
+      main > article > .a-section {
+        height: 100%;
+      }
+
+      main > article > .a-desc,
+      main > article > .a-nav {
+        border-left: 1px solid var(--primary);
+      }
+
+      main > article > .a-title,
+      main > article > .a-nav {
+        border-top: 1px solid var(--primary);
+      }
+
+      /*Article Img Styles*/
+      main > article > .a-img {
+        background-color: oklch(var(--_col));
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23030037' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      main > article > .a-img {
+        background-position: center;
+        background-size: cover;
+      }
+
+      /*Article Desc Style*/
+      main > article > .a-desc {
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 3rem;
+      }
+
+      main > article > .a-desc > p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.25em;
+      }
+
+      main > article > .a-desc > p > a:hover {
+        text-decoration: underline;
+      }
+
+      /*Article Title Styles*/
+
+      main > article > .a-title {
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+      }
+
+      main > article > .a-title > h2 {
+        flex-basis: 50%;
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        margin: 0px;
+      }
+
+      /*Article Nav Styles*/
+      main > article > .a-nav {
+        display: flex;
+      }
+
+      main > article > .a-nav > button {
+        background-color: transparent;
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 3rem;
+        cursor: pointer;
+      }
+
+      main > article > .a-nav > button:hover {
+        background-color: rgba(255, 255, 255, 0.02);
+      }
+
+      main > article > .a-nav > button:last-child {
+        border-left: 1px solid var(--primary);
+      }
+    </style>
+    <script>
+      let activeIndex = 0;
+
+      const slides = document.getElementsByTagName("article");
+
+      const leftClick = () => {
+        const nextIndex =
+          activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
+
+        const currentSlide = document.querySelector(
+            `[data-index="${activeIndex}"]`
+          ),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "after";
+
+        nextSlide.dataset.status = "becoming-active-from-before";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+
+      const rightClick = () => {
+        const nextIndex =
+          activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0;
+
+        const currentSlide = document.querySelector(
+            `[data-index="${activeIndex}"]`
+          ),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "before";
+
+        nextSlide.dataset.status = "becoming-active-from-after";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+    </script>
+</head>
+<body>
+    <nav>
+        <item id="logo">
+            <a href="https://hyperionu.github.io">
+                <i class="fa-solid fa-circle-nodes"></i>
+            </a>
+        </item>
+        <item id="links">
+            <a href="#">About</a>
+            <a href="https://hyperionu.github.io/faculties.html">Faculties</a>
+            <a href="https://hyperionu.github.io/projects.html">Projects</a>
+        </item>
+        <item id="socials">
+            <a href="https://github.com/HyperionU" target="_blank">
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
+            <a href="https://codepen.io/korvid" target="_blank">
+                <i class="fa-brands fa-codepen"></i>
+            </a>
+        </item>
+        <item id="contacts">
+            <a href="https://hi.new/uofh" target="_blank">Contact</a>
+        </item>
+    </nav>
+    <main>
+        <article data-index="0" data-status="active">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                During the later part of the Cold War, Canada pursued a foreign policy emphasizing peacekeeping and diplomacy.
+                Throughout, Canada maintained its commitment to peacekeeping, diplomacy, and multilateralism, contributing to global stability.
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Introduction</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="1" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                Canadians voiced concerns over civil rights, peace, and nuclear disarmament, actively participating in UN peacekeeping missions and played a mediating role in international conflicts. <br>
+                However, this role was a balancing act between America and the Soviet Union.
+                <a href="../slides/Socials/History/Modern Canada/Lesson 1.html">
+                  <i class="fa-brands fa-canadian-maple-leaf"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 1: PM Trudeau Part I</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="2" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  In the 1970s-1980s, Canada faced challenges as tensions escalated between the Anglophone majority and the Francophone minority, mostly based in Québec.
+                <a href="../slides/Socials/History/Modern Canada/Lesson 2/Lesson 2a.html">
+                  <i class="fa-brands fa-canadian-maple-leaf"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 2a: The FLQ</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="3" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  Canada faced challenges as tensions escalated between the Anglophone majority and the Francophone minority, mostly based in Québec.<br>
+                  In October 1970, the FLQ, a radical Québec separatist organisation kidnapped and killed many politicians. It was the first time the Emergencies Act was used during peacetime.
+                <a href="../slides/Socials/History/Modern Canada/Lesson 2/Lesson 2b.html">
+                  <i class="fa-brands fa-canadian-maple-leaf"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 2b: The October Crisis</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="4" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  After The October Crisis, Québec separatists shifted away from violence and to the ballot box, electing the pro-seperatist Parti Québecois. <br>
+                  Seperatism was now on the table. On the 20 May, 1980: The question was posed. The resuting answer? <em>No.</em>
+                <a href="../slides/Socials/History/Modern Canada/Lesson 2/Lesson 2c.html">
+                  <i class="fa-brands fa-canadian-maple-leaf"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 2c: Political Separatism</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="5" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  After the referendum, a major question was posed: How will PM Trudeau appease the Québecois? <br>
+                  In 1982, PM Trudeau patriates the Canadian Constitution, and thus begins Canada's True Independence.
+                <a href="../slides/Socials/History/Modern Canada/Lesson 3.html">
+                  <i class="fa-brands fa-canadian-maple-leaf"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 3: PM Trudeau ('79-'84)</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="6" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  In the 1980s, Canada faced challenges as tensions escalated, with Prime Minister Mulroney supporting some US measures.<br> 
+                  However, Canada also advocated for disarmament and non-proliferation. Canada recognized the changes in the Soviet Union under Gorbachev and supported peaceful coexistence.
+                <a href="../slides/Socials/History/Modern Canada/Lesson 4.html">
+                  <i class="fa-brands fa-canadian-maple-leaf"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 4: PM Mulroney</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="7" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                  The collapse of the Berlin Wall and the dissolution of the Soviet Union had global implications, and Canada played a role in supporting the newly independent countries.<br> 
+                  Throughout the Cold War, Canada maintained its commitment to peacekeeping, diplomacy, and multilateralism, contributing to global stability.
+                <a href="../slides/Socials/History/Modern Canada/Lesson 5.html">
+                  <i class="fa-brands fa-canadian-maple-leaf"></i>
+                </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 5: PM Chrétien</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fa-solid fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fa-solid fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+    </main>
+</body>
+</html>

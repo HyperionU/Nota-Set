@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Calculus 12 - Function Operations</title>
+    <script src="https://kit.fontawesome.com/7625037115.js" crossorigin="anonymous"></script>
+    <style>
+      :root {
+        --text: white;
+        --mint: 72.97% 0.144 170.2;
+        /* "Slate": new background color */
+        --background: 13.63% 0.036 259.2;
+        /* "Space Cadet": new primary color for NKMNT neo */
+        --primary: oklch(24.66% 0.064 269.76);
+        /* "Cardinal": new secondary color for NKNMT neo */
+        --cardinal: 43.58% 0.14 17.33;
+        --napoli: 90.61% 0.139 98.34;
+      }
+
+      body {
+        background-color: oklch(var(--background));
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+        margin: 0;
+        --color: var(--_font-color, --text);
+        --pattern-color: var(--_col, --_font-color);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2,
+      h3,
+      a,
+      p,
+      span {
+        font-family: "Geist", system-ui, sans-serif;
+        color: var(--color);
+      }
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: oklch(var(--pattern-color));
+        }
+      }
+
+      /*Navbar Specific Styling*/
+      nav {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid var(--primary);
+        --_font-color: var(--text);
+      }
+
+      item {
+        padding: 2rem;
+        display: flex;
+        gap: 1rem;
+        border-left: 1px solid var(--primary);
+        align-items: center;
+        justify-content: center;
+      }
+
+      #logo {
+        justify-content: flex-start;
+        font-size: 2.5rem;
+      }
+
+      #logo,
+      #links {
+        flex-basis: calc(100% / 3);
+      }
+
+      #social,
+      #contact {
+        flex-grow: 1;
+      }
+
+      #links,
+      #social {
+        gap: 3rem;
+      }
+
+      body {
+        overflow: hidden;
+        --_font-color: var(--text);
+        --_col: var(--mint);
+      }
+
+      /* main (lander) styles */
+
+      main {
+        flex-grow: 1;
+        position: relative;
+      }
+
+      main > article {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transition: transform 0.4s ease;
+      }
+
+      main > article[data-status="inactive"] {
+        transform: translateX(-100%);
+        transition: none;
+      }
+
+      main > article[data-status="active"] {
+        transform: translateX(0%);
+      }
+
+      main > article[data-status="before"] {
+        transform: translateX(-100%);
+      }
+
+      main > article[data-status="after"] {
+        transform: translateX(100%);
+      }
+
+      main > article[data-status="becoming-active-from-before"] {
+        transform: translateX(-100%);
+        transition: none;
+      }
+
+      main > article[data-status="becoming-active-from-after"] {
+        transform: translateX(100%);
+        transition: none;
+      }
+
+      main > article > .a-section {
+        height: 100%;
+      }
+
+      main > article > .a-desc,
+      main > article > .a-nav {
+        border-left: 1px solid var(--primary);
+      }
+
+      main > article > .a-title,
+      main > article > .a-nav {
+        border-top: 1px solid var(--primary);
+      }
+
+      /*Article Img Styles*/
+      main > article > .a-img {
+        background-color: oklch(var(--_col));
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23030037' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      main > article > .a-img {
+        background-position: center;
+        background-size: cover;
+      }
+
+      /*Article Desc Style*/
+      main > article > .a-desc {
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 3rem;
+      }
+
+      main > article > .a-desc > p {
+        color: rgb(255 255 255 / 0.5);
+        font-size: 1.25em;
+      }
+
+      main > article > .a-desc > p > a:hover {
+        text-decoration: underline;
+      }
+
+      /*Article Title Styles*/
+
+      main > article > .a-title {
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+      }
+
+      main > article > .a-title > h2 {
+        flex-basis: 50%;
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        margin: 0px;
+      }
+
+      /*Article Nav Styles*/
+      main > article > .a-nav {
+        display: flex;
+      }
+
+      main > article > .a-nav > button {
+        background-color: transparent;
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        color: rgb(255 255 255 / 0.75);
+        font-size: 3rem;
+        cursor: pointer;
+      }
+
+      main > article > .a-nav > button:hover {
+        background-color: rgba(255, 255, 255, 0.02);
+      }
+
+      main > article > .a-nav > button:last-child {
+        border-left: 1px solid var(--primary);
+      }
+    </style>
+    <script>
+      let activeIndex = 0;
+
+      const slides = document.getElementsByTagName("article");
+
+      const leftClick = () => {
+        const nextIndex =
+          activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
+
+        const currentSlide = document.querySelector(
+            `[data-index="${activeIndex}"]`
+          ),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "after";
+
+        nextSlide.dataset.status = "becoming-active-from-before";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+
+      const rightClick = () => {
+        const nextIndex =
+          activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0;
+
+        const currentSlide = document.querySelector(
+            `[data-index="${activeIndex}"]`
+          ),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "before";
+
+        nextSlide.dataset.status = "becoming-active-from-after";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+    </script>
+</head>
+<body>
+    <nav>
+        <item id="logo">
+            <a href="https://hyperionu.github.io">
+                <i class="fas fa-circle-nodes"></i>
+            </a>
+        </item>
+        <item id="links">
+            <a href="#">About</a>
+            <a href="https://hyperionu.github.io/faculties.html">Faculties</a>
+            <a href="https://hyperionu.github.io/projects.html">Projects</a>
+        </item>
+        <item id="socials">
+            <a href="https://github.com/HyperionU" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://codepen.io/korvid" target="_blank">
+                <i class="fab fa-codepen"></i>
+            </a>
+        </item>
+        <item id="contacts">
+            <a href="https://hi.new/uofh" target="_blank">Contact</a>
+        </item>
+    </nav>
+    <main>
+        <article data-index="0" data-status="active">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                Function Operations involves adding, subtracting, multiplying, dividing and composing together functions.
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Introduction</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="1" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                Function Operations involves combining two or more functions to create a new function. Understanding function operations is crucial for analyzing complex relationships and transformations in mathematics.
+                <a href="../slides/PC12/Operations/Lesson 1.html">
+                     <i class="fas fa-wave-square"></i>
+                  </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 1: Function Operations</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+         <article data-index="2" data-status="inactive">
+            <div class="a-img a-section"></div>
+            <div class="a-desc a-section">
+               <p>
+                Composition of Functions involves combining two or more functions to create a new function. Understanding function composition is crucial for analyzing complex relationships and transformations in mathematics.
+                <a href="../slides/PC12/Operations/Lesson 2.html">
+                     <i class="fas fa-wave-square"></i>
+                  </a>
+               </p>
+            </div>
+            <div class="a-title a-section">
+               <h2>Lesson 2: Composition of Functions</h2>
+            </div>
+            <div class="a-nav a-section">
+               <button class="a-nav-button" type="button" onmousedown="leftClick()">
+                  <i class="fas fa-arrow-left"></i>
+               </button>
+               <button class="a-nav-button" type="button" onmousedown="rightClick()">
+                  <i class="fas fa-arrow-right"></i>
+               </button>
+            </div>
+         </article>
+    </main>
+</body>
+</html>
