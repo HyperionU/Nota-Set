@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   BadgeCheck,
@@ -6,14 +6,10 @@ import {
   ChevronsUpDown,
   CreditCard,
   LogOut,
-  Sparkles,
-} from "lucide-react"
+  Sparkles
+} from "lucide-react";
 
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -22,24 +18,42 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
+import { useEffect, useState } from "react";
+import { ModeSector } from "./mode-toggle";
 
 export function NavUser({
   user,
 }: {
   user: {
-    name: string
-    email: string
-    avatar: string
-  }
+    name: string;
+    email: string;
+    avatar: string;
+  };
 }) {
-  const { isMobile } = useSidebar()
+  const { isMobile } = useSidebar();
+  const [theme, setThemeState] = useState<
+      "theme-light" | "dark" | "system"
+    >("theme-light")
+  
+    useEffect(() => {
+      const isDarkMode = document.documentElement.classList.contains("dark")
+      setThemeState(isDarkMode ? "dark" : "theme-light")
+    }, [])
+  
+    useEffect(() => {
+      const isDark =
+        theme === "dark" ||
+        (theme === "system" &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      document.documentElement.classList[isDark ? "add" : "remove"]("dark")
+    }, [theme])
 
   return (
     <SidebarMenu>
@@ -80,6 +94,8 @@ export function NavUser({
               </div>
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
+            <ModeSector />
+            <DropdownMenuSeparator />
             <DropdownMenuGroup>
               <DropdownMenuItem>
                 <Sparkles />
@@ -110,5 +126,5 @@ export function NavUser({
         </DropdownMenu>
       </SidebarMenuItem>
     </SidebarMenu>
-  )
+  );
 }

@@ -1,23 +1,32 @@
 ---
+import "@/styles/global.css";
 import Page from "@/layouts/dashboard/page";
-import "@/styles/global.css"
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
 
 interface Props {
-    title: string
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-        <Page client:load />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Page client:load>
+      <div class="grid auto-rows-min gap-4 md:grid-cols-3">
+        <div class="aspect-video rounded-xl bg-muted/50"></div>
+        <div class="aspect-video rounded-xl bg-muted/50"></div>
+        <div class="aspect-video rounded-xl bg-muted/50"></div>
+      </div>
+      <div class="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+    </Page>
+  </body>
 </html>
