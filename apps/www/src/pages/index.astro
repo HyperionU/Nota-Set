@@ -1,6 +1,11 @@
 ---
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import { buttonVariants } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import MainLayout from "@/layouts/MainLayout.astro";
 ---
 
@@ -15,13 +20,13 @@ import MainLayout from "@/layouts/MainLayout.astro";
       </CardHeader>
       <CardContent>
         <p>
-          During the period from 1914 to 2000, Canada transitioned from a British colony to an independent nation and played a crucial role in significant global events.
+          During the period from 1914 to 2000, Canada transitioned from a
+          British colony to an independent nation and played a crucial role in
+          significant global events.
         </p>
       </CardContent>
       <CardFooter>
-        <Button>
-          <a href="ss10.html">Enter</a>
-        </Button>
+        <a href="ss10.html" class={buttonVariants()}>Enter</a>
       </CardFooter>
     </Card>
     <Card>
@@ -30,13 +35,13 @@ import MainLayout from "@/layouts/MainLayout.astro";
       </CardHeader>
       <CardContent>
         <p>
-          Math isn't just about numbers and symbols; it teaches us valuable skills like connecting ideas, being creative, communicating effectively, visualizing concepts, and reasoning logically.
+          Math isn't just about numbers and symbols; it teaches us valuable
+          skills like connecting ideas, being creative, communicating
+          effectively, visualizing concepts, and reasoning logically.
         </p>
       </CardContent>
       <CardFooter>
-        <Button>
-          <a href="pc11.html">Enter</a>
-        </Button>
+        <a href="pc11.html" class={buttonVariants()}>Enter</a>
       </CardFooter>
     </Card>
     <Card>
@@ -45,13 +50,13 @@ import MainLayout from "@/layouts/MainLayout.astro";
       </CardHeader>
       <CardContent>
         <p>
-          To put it simply, the fundamental root of all the content in Pre-Calculus 12 is the function transformation, but what exactly is a transformation?
+          To put it simply, the fundamental root of all the content in
+          Pre-Calculus 12 is the function transformation, but what exactly is a
+          transformation?
         </p>
       </CardContent>
       <CardFooter>
-        <Button>
-          <a href="pc12.html">Enter</a>
-        </Button>
+          <a href="pc12.html" class={buttonVariants()}>Enter</a>
       </CardFooter>
     </Card>
   </main>
