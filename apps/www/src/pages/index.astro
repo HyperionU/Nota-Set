@@ -1,4 +1,5 @@
 ---
+import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -25,8 +26,9 @@ import MainLayout from "@/layouts/MainLayout.astro";
           significant global events.
         </p>
       </CardContent>
-      <CardFooter>
-        <a href="ss10.html" class={buttonVariants()}>Enter</a>
+      <CardFooter className="flex justify-between">
+        <a href="ss10" class={buttonVariants()}>Enter</a>
+        <Badge variant="destructive">{'Unlinked'}</Badge>
       </CardFooter>
     </Card>
     <Card>
@@ -40,8 +42,9 @@ import MainLayout from "@/layouts/MainLayout.astro";
           effectively, visualizing concepts, and reasoning logically.
         </p>
       </CardContent>
-      <CardFooter>
-        <a href="pc11.html" class={buttonVariants()}>Enter</a>
+      <CardFooter className="flex justify-between">
+        <a href="pc11" class={buttonVariants()}>Enter</a>
+        <Badge>{'Linked'}</Badge>
       </CardFooter>
     </Card>
     <Card>
@@ -55,8 +58,9 @@ import MainLayout from "@/layouts/MainLayout.astro";
           transformation?
         </p>
       </CardContent>
-      <CardFooter>
-          <a href="pc12.html" class={buttonVariants()}>Enter</a>
+      <CardFooter className="flex justify-between">
+          <a href="pc12" class={buttonVariants()}>Enter</a>
+          <Badge variant="destructive">{'Unlinked'}</Badge>
       </CardFooter>
     </Card>
   </main>
