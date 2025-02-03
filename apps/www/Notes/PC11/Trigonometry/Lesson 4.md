@@ -178,6 +178,4 @@ If we use Pythagoras to find the height, we get an exact value of $\sqrt{3}$, wh
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%205%20(Trigonometric%20Ratios).html) 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%205.html)

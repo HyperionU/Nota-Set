@@ -99,6 +99,4 @@ process.
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](..//Quadratic%20Equations/Lesson%201%20(Radicals%20&%20Square-Root%20Principle).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit](../Quadratic%20Equations/Lesson%201.html)

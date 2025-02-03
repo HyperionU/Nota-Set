@@ -85,6 +85,4 @@ $\newcommand{\wfr}[1]{\frac{#1}{1}}$
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../Radicals/Lesson%201%20(Working%20+%20Adding%20and%20Subtracting).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit](../Radicals/Lesson%201.html)

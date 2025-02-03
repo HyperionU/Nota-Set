@@ -139,6 +139,4 @@ It is just another tool in our toolkit to solve quadratic equations.
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../Applications/Lesson%201%20(Applications%20Part%201).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit](../Applications/Lesson%201.html)

@@ -115,6 +115,4 @@ math: mathjax
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../../Rationals/Lesson%201%20(Basics).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit](../../Rationals/Lesson%201.html)
