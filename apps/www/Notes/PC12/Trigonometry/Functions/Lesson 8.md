@@ -98,6 +98,4 @@ $$
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../Graphing/Lesson%201%20(Plotting%20Trigonometric%20Functions).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit](../Graphing/Lesson%201.html)

@@ -103,6 +103,4 @@ For example, take $y = (x - 3)^2$, and graph its inverse.
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../Polynomials/Lesson%201%20(Division).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit](../Polynomials/Lesson%201.html)

@@ -120,6 +120,4 @@ If $a = \log_3 4$ and $b = \log_5 49$, express the following in terms of a and b
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%205%20(Logarithmic%20Equations).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](Lesson%205.html)

@@ -89,6 +89,4 @@ High tide is $14\text{m}$ at 6 hours, and the next low tide is $2\text{m}$ at 12
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../Identities/Lesson%201%20(Definitions).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../Identities/Lesson%201.html)

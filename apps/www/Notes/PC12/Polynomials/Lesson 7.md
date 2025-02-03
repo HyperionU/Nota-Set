@@ -94,6 +94,4 @@ We get $f(x) = \frac{-5}{18}(x - 3)(x + 2)^2$.
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../Trigonometry/Functions/Lesson%201%20(Radians).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit](../Trigonometry/Functions/Lesson%201.html)

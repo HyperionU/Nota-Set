@@ -81,6 +81,4 @@ $f(x) = x^2 + x - 6, g(x) = 2x + 6$, determine $h(x) = (f/g)(x)$.
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%202%20(Composition%20of%20Functions).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](Lesson%202.html)

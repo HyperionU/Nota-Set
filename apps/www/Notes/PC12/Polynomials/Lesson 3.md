@@ -203,6 +203,4 @@ $\mathfrak{f}(P(x)) = (x - 3)(x - 2)^2(x + 2)$
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%204%20(Rational%20Zero%20Theorem).html) 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](Lesson%204.html)

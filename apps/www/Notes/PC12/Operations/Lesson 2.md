@@ -81,6 +81,4 @@ If $h(x) = f(g(x))$ is given below, determine $f(x)$ and $g(x)$.
 
 ---
 
-# [Finish <i class="fa-solid fa-flag-checkered"></i>](https://hyperionu.github.io/Nota-Set)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Finish](../../../)
