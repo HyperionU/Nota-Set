@@ -55,6 +55,4 @@ style: |
 
 ---
 
-# [Next Part <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%202c%20(Political%20Seperatism).html) 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Part](Lesson%202c.html)

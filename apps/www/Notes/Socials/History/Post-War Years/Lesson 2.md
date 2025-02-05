@@ -22,7 +22,7 @@ style: |
 
 ## International Affairs: Spies in Canada
 
-* Late 1945: Igor Gouzenko, a Soviet embassy clerb in Ottawa defected to Canada, revealing a Soviet spy ring in Canada.
+* Late 1945: Igor Gouzenko, a Soviet embassy clerk in Ottawa defected to Canada, revealing a Soviet spy ring in Canada.
 * This was a shock and wake up call to the west.
 
 ---
@@ -54,6 +54,4 @@ style: |
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%203%20(PM%20St%20Laurent).html) 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](Lesson%203.html)

@@ -102,20 +102,18 @@ paginate: true
 ## Law-Making Process, Part 1
 
 1) A bill is introduced, usually by a **cabinet member** in the **House of Commons**.
-2) The bill goes through **First Reading <i class="fa-solid fa-file-lines" style="color: green;"></i>**, where it's simply introduced
-3) In the **Second Reading <i class="fa-solid fa-file-circle-question" style="color: green;"></i>**, it is debated and voted on (to decide whether to continue).
-4) If approved, the bill moves to **Committee<i class="fa-solid fa-people-line" style="color: green;"></i>**, where it is polished and refined.
-5) At the **Third Reading<i class="fa-solid fa-scroll" style="color: green;"></i>**, The House votes, if approved, it moves to the **Senate<i class="fa-solid fa-diagram-next" style="color:red"></i>**.
+2) The bill goes through **First Reading**, where it's simply introduced
+3) In the **Second Reading**, it is debated and voted on (to decide whether to continue).
+4) If approved, the bill moves to **Committee**, where it is polished and refined.
+5) At the **Third Reading**, The House votes, if approved, it moves to the **Senate**.
 
 ---
 
 ## Law Making Process, Part 2
 
-6) In the Senate, the bill goes through **First Reading <i class="fa-solid fa-file-lines" style="color: red;"></i>, Second Reading <i class="fa-solid fa-file-circle-question" style="color: red;"></i>, Committee <i class="fa-solid fa-people-line" style="color:red;"></i>** and a **Third Reading<i class="fa-solid fa-scroll" style="color: red;"></i>**.
-7) ***If*** both the the House and Senate pass the bill, it is sent to the **Govenor General**, whom gives it **Royal Assent<i class="fa-brands fa-canadian-maple-leaf" style="color: blue;"></i>**, and it *finally* becomes a ***Law***.
+6) In the Senate, the bill goes through **First Reading, Second Reading, Committee** and a **Third Reading**.
+7) ***If*** both the the House and Senate pass the bill, it is sent to the **Govenor General**, whom gives it **Royal Assent**, and it *finally* becomes a ***Law***.
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%203%20(The%20Executive%20Branch).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](Lesson%203.html)

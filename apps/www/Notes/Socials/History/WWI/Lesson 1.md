@@ -64,6 +64,4 @@ paginate: true
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%202%20(Canada's%20Army%20And%20Response).html) 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](Lesson%202.html)

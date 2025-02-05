@@ -123,6 +123,4 @@ paginate: true
 
 ---
 
-# [Next Unit <i class="fa-solid fa-diagram-next"></i>](../Post-War%20Years/Lesson%201%20(The%20Cold%20War%20&%20The%20UN).html)
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Unit](../Post-War%20Years/Lesson%201.html)

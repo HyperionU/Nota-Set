@@ -38,6 +38,4 @@ style: |
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](../Lesson%203%20(PM%20Trudeau:%20'79-'84).html) 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](../Lesson%203.html)

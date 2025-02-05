@@ -58,6 +58,4 @@ paginate: true
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%205%20(The%20War%20in%20The%20Sea).html) 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](Lesson%205.html)

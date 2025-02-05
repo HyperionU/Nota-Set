@@ -106,7 +106,7 @@ style: |
 
 * 1990: Iraq invaded Kuwait.
 * The UN passes a resolution supporting the use of force to liberate Kuwait.
-* Canada was part of the US les coalition, contributing:
+* Canada was part of the US led coalition, contributing:
     * Squadron of CF-18s,
     * a Field Hospital,
     * 3 ships (2 destroyers & a supply ship)
@@ -150,6 +150,4 @@ style: |
 
 ---
 
-# [Next Lesson <i class="fa-solid fa-circle-arrow-right"></i>](Lesson%205%20(PM%20Chrétien).html) 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+# [Next Lesson](Lesson%205.html)
