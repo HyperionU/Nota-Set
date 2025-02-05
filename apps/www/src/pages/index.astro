@@ -1,5 +1,4 @@
 ---
-import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -28,7 +27,6 @@ import MainLayout from "@/layouts/MainLayout.astro";
       </CardContent>
       <CardFooter className="flex justify-between">
         <a href="ss10" class={buttonVariants()}>Enter</a>
-        <Badge variant="destructive">{'Unlinked'}</Badge>
       </CardFooter>
     </Card>
     <Card>
@@ -44,7 +42,6 @@ import MainLayout from "@/layouts/MainLayout.astro";
       </CardContent>
       <CardFooter className="flex justify-between">
         <a href="pc11" class={buttonVariants()}>Enter</a>
-        <Badge>{'Linked'}</Badge>
       </CardFooter>
     </Card>
     <Card>
@@ -60,7 +57,6 @@ import MainLayout from "@/layouts/MainLayout.astro";
       </CardContent>
       <CardFooter className="flex justify-between">
           <a href="pc12" class={buttonVariants()}>Enter</a>
-          <Badge>{'Linked'}</Badge>
       </CardFooter>
     </Card>
   </main>
