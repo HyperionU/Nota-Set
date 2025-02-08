@@ -1,8 +1,6 @@
 ---
 import "@/styles/global.css";
 import Page from "@/layouts/dashboard/page";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/app-sidebar";
 
 interface Props {
   title: string;
@@ -10,6 +8,25 @@ interface Props {
 
 const { title } = Astro.props;
 ---
+
+<script is:inline>
+	const getThemePreference = () => {
+		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+			return localStorage.getItem('theme');
+		}
+		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	};
+	const isDark = getThemePreference() === 'dark';
+	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+ 
+	if (typeof localStorage !== 'undefined') {
+		const observer = new MutationObserver(() => {
+			const isDark = document.documentElement.classList.contains('dark');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+		});
+		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+	}
+</script>
 
 <html lang="en">
   <head>
@@ -21,12 +38,7 @@ const { title } = Astro.props;
   </head>
   <body>
     <Page client:load>
-      <div class="grid auto-rows-min gap-4 md:grid-cols-3">
-        <div class="aspect-video rounded-xl bg-muted/50"></div>
-        <div class="aspect-video rounded-xl bg-muted/50"></div>
-        <div class="aspect-video rounded-xl bg-muted/50"></div>
-      </div>
-      <div class="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+      <slot />
     </Page>
   </body>
 </html>

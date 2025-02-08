@@ -1,7 +1,63 @@
 ---
+import { buttonVariants } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import SideLayout from "@/layouts/SideLayout.astro";
 ---
 
 <SideLayout title="Sidebar Test">
-    
+    <main class="grid items-center grid-cols-3 gap-4">
+        <header class="text-center col-span-3 p-8">
+          <h1>Nota-Set</h1>
+        </header>
+        <Card>
+          <CardHeader className="text-center">
+            <h2>Socials 10</h2>
+          </CardHeader>
+          <CardContent>
+            <p class="line-clamp-4">
+              During the period from 1914 to 2000, Canada transitioned from a
+              British colony to an independent nation and played a crucial role in
+              significant global events.
+            </p>
+          </CardContent>
+          <CardFooter className="flex justify-between">
+            <a href="ss10" class={buttonVariants()}>Enter</a>
+          </CardFooter>
+        </Card>
+        <Card>
+          <CardHeader className="text-center">
+            <h2>Pre-Calculus 11</h2>
+          </CardHeader>
+          <CardContent>
+            <p class="line-clamp-4">
+              Math isn't just about numbers and symbols; it teaches us valuable
+              skills like connecting ideas, being creative, communicating
+              effectively, visualizing concepts, and reasoning logically.
+            </p>
+          </CardContent>
+          <CardFooter className="flex justify-between">
+            <a href="pc11" class={buttonVariants()}>Enter</a>
+          </CardFooter>
+        </Card>
+        <Card>
+          <CardHeader className="text-center">
+            <h2>Pre-Calculus 12</h2>
+          </CardHeader>
+          <CardContent>
+            <p class="line-clamp-4">
+              To put it simply, the fundamental root of all the content in
+              Pre-Calculus 12 is the function transformation, but what exactly is a
+              transformation?
+            </p>
+          </CardContent>
+          <CardFooter className="flex justify-between">
+              <a href="pc12" class={buttonVariants()}>Enter</a>
+          </CardFooter>
+        </Card>
+      </main>
 </SideLayout>
