@@ -107,11 +107,75 @@ A series of notes & presentations, provided by Hyperion University
         - Optics & Reflection
         - Plane Mirrors
         - Curved Mirrors
+* ### Chemistry 11 (coming soon)
+    - Unit I: Introduction / Safety
+        - Measurements, Unit Conversions and Graphing
+        - Chemical Bonding (Ionic, Polar / Non-Polar Covalent, others)
+        - Safety and the Scientific Method
+    * Unit II - IV: Stoichiometry
+        - Unit II: The Mole Concept
+            - Avogadro's Number ($N_A$)
+            - The Mole Bridge
+            - Percent Composition
+            - Empirical / Molecular Formulae
+        - Unit III: Stoichiometry, Reagents and Reactions
+            - Balancing Chemical Reactions (Formula)
+            - Types of Chemical Reactions
+            - Calculating Unknown Quantities
+            - Limiting / Excess Reagents
+        - Unit IV: Applied Stoichiometry (Solution Chemistry & Gas Laws)
+            - Molarity
+            - Common Ions in Solution
+            - Ideal / Combined Gas Equations
+            - Graham's Law and Effusion
+    - Unit V: Atomic Theory and The Periodic Table
+        - Introduction / Review
+        - Atoms, Molecules and Ions
+        - Orbital Theory, Quantum Mechanics and Energy Level Diagrams
+        - Trends and Organisation of Periodic Table
+    - Unit VI: Organic Chemistry
+        - Introduction
+        - Hydrocarbons
+            - Alkanes, Alkenes, Alkynes
+            - Cyclohydrocarbons
+            - Aromatics (Benzene-containing)
+        - Functional Groups
+            - Alkyls
+            - Halides
+            - Alcohols
+            - Ethers
+            - Aldehydes
+            - Ketones
+            - Carboxylic Acids
+            - Amines & Amides
+            - Esters
+    - Unit VII: Energy and Matter
+        - Temperature
+        = Separation of Matter
 
 ## Future Additions
-* ### Chemistry 11
+
 * ### Chemistry 12
+    - Unit Ia: Chemistry 11 Review
+        - Stoichiometry
+        - Atomic Theory
+        - Other Forms of Reactions
+            - Net / Complete Ionic Eq.
+    - Unit Ib: Reaction Kinetics
+        - Reaction Rates
+        - Factors affecting Reaction Rates
+    - Unit II: Equilibrium
+    - Unit III: TBD
+    - Unit IV: TBD
+    - Unit V: TBD
 * ### Physics 12
+    - Unit I: Vectors & Vector Arithmetic
+        - Addition of Non-Parallel Vectors
+        - Navigation Problems
+        - Relativistic Problems
+    - Unit II: Vector Mechanics
+        - 'Change of Basis' [$(\hat{i}, \hat{j}) \mapsto (\hat{u}, \hat{v})$]
+        - Force of Friction on Inclined Planes
 
 ## What's inside?
 
