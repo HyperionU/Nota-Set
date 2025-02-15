@@ -164,6 +164,7 @@ A series of notes & presentations, provided by Hyperion University
     - Unit Ib: Reaction Kinetics
         - Reaction Rates
         - Factors affecting Reaction Rates
+        - Collision Theory
     - Unit II: Equilibrium
     - Unit III: TBD
     - Unit IV: TBD
@@ -176,6 +177,7 @@ A series of notes & presentations, provided by Hyperion University
     - Unit II: Vector Mechanics
         - 'Change of Basis' [$(\hat{i}, \hat{j}) \mapsto (\hat{u}, \hat{v})$]
         - Force of Friction on Inclined Planes
+        - Dynamical Systems on Inclined Planes
 
 ## What's inside?
 
@@ -183,10 +185,15 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Starlight](https://starlight.astro.build/) app
-- `www`: an [Astro](https://astro.build/) app
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+| Apps             | Version |
+|------------------|---------|
+| `@nota-set/docs` | ![GitHub package.json version](https://img.shields.io/github/package-json/v/HyperionU/Nota-Set?filename=apps%2Fdocs%2Fpackage.json) |
+| `@nota-set/www` | ![GitHub package.json version](https://img.shields.io/github/package-json/v/HyperionU/Nota-Set?filename=apps%2Fwww%2Fpackage.json) |
+
+| Packages              | Version |
+|-----------------------|---------|
+| `@repo/eslint-config` | ![GitHub package.json version](https://img.shields.io/github/package-json/v/HyperionU/Nota-Set?filename=packages%2Feslint-config%2Fpackage.json) |
+| `@repo/typescript-config` | ![GitHub package.json version](https://img.shields.io/github/package-json/v/HyperionU/Nota-Set?filename=packages%2Ftypescript-config%2Fpackage.json) |
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -212,6 +219,13 @@ To develop all apps and packages, run the following command:
 
 ```
 pnpm dev
+```
+
+### Versioning
+If needed, use the following command:
+
+```
+pnpm changeset
 ```
 
 ### Remote Caching
