@@ -187,8 +187,8 @@ This Turborepo includes the following packages/apps:
 
 | Apps             | Version |
 |------------------|---------|
-| `@nota-set/docs` | ![GitHub package.json version](https://img.shields.io/github/package-json/v/HyperionU/Nota-Set?filename=apps%2Fdocs%2Fpackage.json) |
-| `@nota-set/www` | ![GitHub package.json version](https://img.shields.io/github/package-json/v/HyperionU/Nota-Set?filename=apps%2Fwww%2Fpackage.json) |
+| `@nota-set/docs` | ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FHyperionU%2FNota-Set%2Frefs%2Fheads%2Fmain%2Fapps%2Fdocs%2Fpackage.json&query=%24.version&label=version) |
+| `@nota-set/www` | ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FHyperionU%2FNota-Set%2Frefs%2Fheads%2Fmain%2Fapps%2Fwww%2Fpackage.json&query=%24.version&label=version) |
 
 | Packages              | Version |
 |-----------------------|---------|
