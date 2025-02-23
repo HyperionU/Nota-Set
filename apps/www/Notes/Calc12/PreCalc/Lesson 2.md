@@ -78,7 +78,7 @@ math: mathjax
 
 ---
 
-# [Next Lesson](Lesson%203.html)
+# [Next Lesson](Lesson%203)
 
 <!--_footer: Next page for exercise answers! -->
 
@@ -123,4 +123,4 @@ math: mathjax
 
 ---
 
-# [Next Lesson](Lesson%203.html)
+# [Next Lesson](Lesson%203)

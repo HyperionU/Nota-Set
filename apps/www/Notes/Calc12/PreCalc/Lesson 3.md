@@ -120,7 +120,7 @@ math: mathjax
 
 ---
 
-# [Next Lesson](Lesson%204.html)
+# [Next Lesson](Lesson%204)
 
 <!--_footer: Next page for exercise answers! -->
 
@@ -170,4 +170,4 @@ math: mathjax
 
 ---
 
-# [Next Lesson](Lesson%204.html)
+# [Next Lesson](Lesson%204)

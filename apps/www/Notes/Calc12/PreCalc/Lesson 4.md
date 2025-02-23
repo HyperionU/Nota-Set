@@ -86,11 +86,11 @@ math: mathjax
 
 ---
 
-# [Practice Quiz]()
+# [Practice Quiz](Quiz)
 
 Or
 
-# [Next Lesson](Lesson%205.html)
+# [Next Lesson](Lesson%205)
 
 <!--_footer: Next page for exercise answers! -->
 
@@ -119,8 +119,8 @@ Or
 
 ---
 
-# [Practice Quiz]()
+# [Practice Quiz](Quiz)
 
 Or
 
-# [Next Lesson](Lesson%205.html)
+# [Next Lesson](Lesson%205)
