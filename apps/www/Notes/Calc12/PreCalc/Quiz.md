@@ -78,4 +78,4 @@ math: mathjax
 
 ---
 
-# [Next Lesson](Lesson%205.html)
+# [Next Lesson](Lesson%205)
