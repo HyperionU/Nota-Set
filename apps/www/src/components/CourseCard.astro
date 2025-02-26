@@ -1,18 +1,33 @@
 ---
+import { Badge } from "./ui/badge";
 import { buttonVariants } from "./ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+
+type Stability = "Stable" | "Experimental" | "RC" | "Unstable";
 
 interface Props {
     course: string
     ref: string
+    stable?: Stability
 }
 
-const {course, ref}: Props = Astro.props;
+const {course, ref, stable="Stable"}: Props = Astro.props;
 ---
 
 <Card>
-    <CardHeader className="text-center">
-      <h2>{course}</h2>
+    <CardHeader className="flex items-center">
+      <h2 class="w-full text-center">{course}</h2>
+      {
+        stable === "Stable" ? 
+          (<Badge>{stable}</Badge>) : 
+        stable === "Experimental" ?
+          (<Badge variant="outline">{stable}</Badge>) : 
+        stable === "RC" ? 
+          (<Badge variant="secondary">{stable}</Badge>) : 
+        stable === "Unstable" ?
+          (<Badge variant="destructive">{stable}</Badge>) :
+        null
+      }
     </CardHeader>
     <CardContent>
       <p class="line-clamp-4">
