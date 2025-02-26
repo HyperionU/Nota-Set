@@ -1,0 +1,17 @@
+---
+import ItemCard from "@/components/ItemCard.astro";
+import SideLayout from "@/layouts/SideLayout.astro";
+---
+
+<SideLayout title="Nota-Set | Calculus 12">
+    <main class="grid items-center grid-cols-3 gap-4">
+        <header class="text-center col-span-3 p-8">
+          <h1>Calculus 12</h1>
+        </header>
+        <ItemCard selector="Unit" itemNumber={1} itemName="Pre-Calculus" ref="calc12/precalc">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
+    </main>
+</SideLayout>

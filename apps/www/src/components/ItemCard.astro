@@ -1,0 +1,27 @@
+---
+import { buttonVariants } from "./ui/button";
+import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+
+interface Props {
+  selector: "Unit" | "Lesson"
+  itemNumber: number
+  itemName: string
+  ref: string
+}
+
+const {selector, itemNumber, itemName, ref}: Props = Astro.props;
+---
+
+<Card>
+    <CardHeader className="text-center">
+      <h2>{selector === "Unit" ? `Unit ${itemNumber}` : `Lesson ${itemNumber}`}: {itemName}</h2>
+    </CardHeader>
+    <CardContent>
+      <p class="line-clamp-4">
+        <slot />
+      </p>
+    </CardContent>
+    <CardFooter className="flex justify-between">
+      <a href={ref} class:list={[buttonVariants(), "w-full"]}>Enter</a>
+    </CardFooter>
+  </Card>
