@@ -1,12 +1,10 @@
 # ***Nota-Set***
 A series of notes & presentations, provided by Hyperion University
 
-## New for v2.0.0
+## New for v2.1.0
 
-### Added
-* Pre-Calculus 12
-### NoMD Project
-* The entirety of the NoMD project has been completed! As such, there are no more issues for Second Edition.
+### Added (@nota-set/www)
+* Pre-Calculus (Calculus 12)
 
 ## **Notes List:**
 * ### Social Studies 10
@@ -40,10 +38,9 @@ A series of notes & presentations, provided by Hyperion University
 * ### Calculus 12 (coming soon)
     * Section I: Preparation
         - Unit I: Functions, Models, Equations and Inequalities
-            - Functions & Models
-            - Equations
-            - Non-Linear Inequalities
-            - Trigonometric Identities
+            - Functions, Models & Equations, Lessons 1-4
+            - Non-Linear Inequalities, Lessons 5-8
+            - Trigonometric Identities, Lesson 9
         - Unit II: Limits and Continuity
             - Forms of Discontinuity
             - Limits
@@ -86,18 +83,18 @@ A series of notes & presentations, provided by Hyperion University
         - Projectiles 
     - Unit II: Dynamics
         - Forces and Freebody Diagrams
-        - Force of Gravity
-        - Force of Friction
-        - Force of Springs
-        - Force of Tension
+        - Force of Gravity ($F_g$)
+        - Force of Friction ($F_f$)
+        - Force of Springs ($F_s$)
+        - Force of Tension ($T$)
         - Dynamic Systems
     - Unit III: Energy
-        - Work
-        - Mechanical Energy
+        - Work ($W$)
+        - Mechanical Energy ($E_k, E_p$)
         - Conservation of Mechanical Energy
-        - Heat
-        - Work (friction)
-        - Power and Efficiency
+        - Heat ($\Delta E_h$)
+        - Work (friction) ($W_f$)
+        - Power and Efficiency ($P$)
     - Unit IV: Circuits
         - Series Circuits
         - Parallel Circuits
