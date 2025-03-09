@@ -3,17 +3,22 @@ import ItemCard from "@/components/ItemCard.astro";
 import SideLayout from "@/layouts/SideLayout.astro";
 ---
 
-<SideLayout title="Nota-Set | Calculus 12">
+<SideLayout title="Calculus 12 | Pre-Calculus">
     <main class="grid items-center grid-cols-3 gap-4">
         <header class="text-center col-span-3 p-8">
-          <h1>Calculus 12</h1>
+          <h1>Unit II: Limits</h1>
         </header>
-        <ItemCard selector="Unit" itemNumber={1} itemName="Pre-Calculus" ref="calc12/precalc">
+        <ItemCard selector="Lesson" itemNumber={1} itemName="Intro to Limits" ref="../slides/Calc12/Limits/Lesson 1" stable="Stable">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
         </ItemCard>
-        <ItemCard selector="Unit" itemNumber={2} itemName="Limits" ref="calc12/limits" stable="Unstable">
+        <ItemCard selector="Lesson" itemNumber={2} itemName="Rational Limits" ref="../slides/Calc12/Limits/Lesson 2" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
+        <ItemCard selector="Lesson" itemNumber={3} itemName="Limits and Tangent Lines" ref="../slides/Calc12/Limits/Lesson 3" stable="Unstable">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
