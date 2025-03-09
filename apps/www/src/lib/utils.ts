@@ -8,3 +8,5 @@ export function cn(...inputs: ClassValue[]) {
 export type CarouselCard = {ref: string, title: string, description: string}
 
 export type Project = {title: string; href: string; description: string};
+
+export type Stability = "Stable" | "Experimental" | "RC" | "Unstable";
