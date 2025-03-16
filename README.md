@@ -1,10 +1,16 @@
 # ***Nota-Set***
 A series of notes & presentations, provided by Hyperion University
 
-## New for v2.1.0
+## New for v2.2.0
 
-### Added (@nota-set/www)
-* Pre-Calculus (Calculus 12)
+### Additions / Changes
+
+#### @nota-set/www
+* Limits (Calculus 12)
+* Updated to Astro 5.5.2
+
+#### @nota-set/docs
+* Updated to Astro 5.5.2
 
 ## **Notes List:**
 * ### Social Studies 10
