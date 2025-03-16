@@ -42,8 +42,8 @@ A series of notes & presentations, provided by Hyperion University
             - Non-Linear Inequalities, Lessons 5-8
             - Trigonometric Identities, Lesson 9
         - Unit II: Limits and Continuity
-            - Forms of Discontinuity
-            - Limits
+            - Forms of Discontinuity, Lesson 1-2
+            - Limits, Lessons 1-3
     * Section II: Differential Calculus
         - Unit III: The Derivative (w/ Elementary Functions)
             - Differentiation Rules
