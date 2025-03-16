@@ -7,7 +7,7 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "cs:add": "changeset",
-    "version": "changeset version"
+    "cs:version": "changeset version"
   },
   "devDependencies": {
     "prettier": "^3.5.1",
