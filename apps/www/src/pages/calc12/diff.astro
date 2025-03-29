@@ -1,5 +1,4 @@
 ---
-import CourseCard from "@/components/CourseCard.astro";
 import ItemCard from "@/components/ItemCard.astro";
 import SideLayout from "@/layouts/SideLayout.astro";
 ---
@@ -7,22 +6,27 @@ import SideLayout from "@/layouts/SideLayout.astro";
 <SideLayout title="Nota-Set | Calculus 12">
     <main class="grid items-center grid-cols-3 gap-4">
         <header class="text-center col-span-3 p-8">
-          <h1>Calculus 12</h1>
+          <h1>Differential Calculus</h1>
         </header>
-        <ItemCard selector="Unit" itemNumber={1} itemName="Pre-Calculus" ref="calc12/precalc">
+        <ItemCard selector="Unit" itemNumber={3} itemName="Elementary Derivatives" ref="diff/elem" stable="RC">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
         </ItemCard>
-        <ItemCard selector="Unit" itemNumber={2} itemName="Limits" ref="calc12/limits">
+        <ItemCard selector="Unit" itemNumber={4} itemName="Trancendental Derivatives" ref="calc12/limits" stable="Unstable">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
         </ItemCard>
-        <CourseCard course="Units 3-6: Differentiation" ref="calc12/diff" stable="RC">
+        <ItemCard selector="Unit" itemNumber={5} itemName="Extrema and Curve Sketching" ref="calc12/precalc" stable="Unstable">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
-        </CourseCard>
+        </ItemCard>
+        <ItemCard selector="Unit" itemNumber={6} itemName="Applications of Derivatives" ref="calc12/limits" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
     </main>
 </SideLayout>
