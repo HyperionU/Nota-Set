@@ -93,7 +93,7 @@ $\displaystyle f(x) = x^n,\ f'(x) = nx^{n - 1}$
 
 ## Sum and Difference Rules
 
-* These aren't one of the nine main derivative rules, but they do come up often.
+* These come up often enough that they are considered one of the ten main derivative rules.
 
 $\diff{x} [f(x) \pm g(x)] = \diff{x} f(x) \pm \diff{x} g(x) = f'(x) \pm g'(x)$
 
@@ -142,8 +142,8 @@ $\diff{x} [f(x) \pm g(x)] = \diff{x} f(x) \pm \diff{x} g(x) = f'(x) \pm g'(x)$
 1. Constant: $\diff{x} c = 0$
 2. Power: $\diff{x} x^n = nx^{n - 1}$
 3. Sum / Difference: $\diff{x} [f(x) \pm g(x)] = \diff{x} [f(x)] \pm \diff{x} [g(x)]$
-4. Product: Lesson 3
-5. Quotient: Lesson 4 (special case of 3)
+4. Product: Next Lesson
+5. Quotient: Lesson 4 (special case of 4)
 6. Chain: Lesson 5 
 7. Sine: Next Unit
 8. Cosine: Next Unit
