@@ -191,12 +191,7 @@ This Turborepo includes the following packages/apps:
 | Apps             | Version |
 |------------------|---------|
 | `@nota-set/docs` | ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FHyperionU%2FNota-Set%2Frefs%2Fheads%2Fmain%2Fapps%2Fdocs%2Fpackage.json&query=%24.version&label=version) |
-| `@nota-set/www` | ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FHyperionU%2FNota-Set%2Frefs%2Fheads%2Fmain%2Fapps%2Fwww%2Fpackage.json&query=%24.version&label=version) |
-
-| Packages              | Version |
-|-----------------------|---------|
-| `@repo/eslint-config` | ![GitHub package.json version](https://img.shields.io/github/package-json/v/HyperionU/Nota-Set?filename=packages%2Feslint-config%2Fpackage.json) |
-| `@repo/typescript-config` | ![GitHub package.json version](https://img.shields.io/github/package-json/v/HyperionU/Nota-Set?filename=packages%2Ftypescript-config%2Fpackage.json) |
+| [`@nota-set/www`](https://nota-set.uofh.ca) | ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FHyperionU%2FNota-Set%2Frefs%2Fheads%2Fmain%2Fapps%2Fwww%2Fpackage.json&query=%24.version&label=version) |
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -263,7 +258,3 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
-
----
-## **Status Badges**
-![Release](https://img.shields.io/github/v/release/HyperionU/Nota-Set?color=darkred) 
