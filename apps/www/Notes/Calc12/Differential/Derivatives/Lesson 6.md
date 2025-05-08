@@ -5,8 +5,8 @@ class: invert
 math: mathjax
 ---
 
-$\newcommand\diff[1][]{\mathcal{d}_{#1}}$
-$\newcommand\dd[2][]{\displaystyle\frac{d#1}{d#2}}$
+$\newcommand\diff[1]{\mathcal{d}_{#1}}$
+$\newcommand\dd[3][]{\displaystyle\frac{d^{#1}#2}{d#3^{#1}}}$
 
 # <!--fit--> Calculus 12 Notes
 <span style="color:grey">By:</span> Gen L.
@@ -17,7 +17,7 @@ $\newcommand\limit[2]{\displaystyle\lim_{#1 \to #2}}$
 
 ---
 
-# Lesson 6: Implicit Differentiation
+# Lesson 6: Higher Order Derivatives
 
 ---
 
@@ -25,98 +25,198 @@ $\newcommand\limit[2]{\displaystyle\lim_{#1 \to #2}}$
 
 ## Intro
 
-* Previously, we focused on simple derivatives: derivatives of functions such that $y = f(x)$.
-* However, this may not always be the case. We may not strictly have one input and output.
-* We may have interdependent values related by some equation. These form what are called 'implicit curves', and differentiating these is called 'implicit differentiation'.
-* Here, let's look at an example:
+* The first time a function is differentiated, the result is known as the first derivative.
+* However, we can go farther than that.
+* We can differentiate the first derivative to get the second derivative.
+* And we can differentiate the second derivative to get the third derivative, and so on.
+* These are known as **Higher Order Derivatives**.
 
 ---
 
-## Example
+## A Note On Notation
 
-* Consider this implicit curve: $2y = y^2 + 3x^3$
-* This 'elliptic curve' is not a function. We can't easily isolate $y$.
-* So, let's try a different technique:
-    * $\diff (2y) = \diff (y^2 + 3x^3)$
-    * $\diff (2y) = \diff (y^2) + \diff (3x^3)$
-    * $2 dy = (2y)dy + 9x^2 dx$
-    * $2 dy - (2y)dy = 9x^2 dx$
+* The *Order* of a derivative is the amount of times we have differentiated from the original function.
+* Here's some common notation for
+    * Second Order Derivatives:
+        * $f''(x)$ or $y''$
+        * $\dd[2]{y}{x}$ or $\dd[2]{f}{x}$
+        * $(\diff{x}\circ\diff{x})f(x) = \diff{x}(\diff{x}(f(x))) = \diff{x}^2(f(x))$
 
 ---
 
-## Example, cont.
+## A Note On Notation, cont.
+* Here's some common notation for
+    * Third Order Derivatives:
+        * $f'''(x)$ or $y'''$
+        * $\dd[3]{y}{x}$ or $\dd[3]{f}{x}$
+        * $(\diff{x} \circ \diff{x}\circ\diff{x})f(x) = \diff{x}(\diff{x}(\diff{x}(f(x)))) = \diff{x}^3(f(x))$
+* Higher Order Derivatives represent the rate of change of the slope of the tangent line of the Derivative 1 degree lower.
 
-* $dy(2 - 2y) = 9x^2 dx$
-* $\dd[y]{x} = \frac{9x^2}{2 - 2y}$
-* And, that's our derivative for this implicit curve.
-* This might not make much sense, but it works great when it comes to Applications of Differentiation (which we'll talk about in Unit 6).
-* Let's look at more examples.
+---
+
+## Important Note
+* It's important to fully simplify each derivative before taking the next derivative. 
+* This reduces the number of rules required and keeps differentiation manageable.
 
 ---
 
 ## Example 1
 
-1. Differentiate $x^2 + y^2 = 15$
-    * $\diff (x^2) + \diff (y^2) = \diff (15)$
-    * $(2x)dx + (2y)dy = 0$
-    * $(2y)dy = -(2x)dx$
-    * $\dd[y]{x} = \frac{-2x}{2y}$
-    * $\dd[y]{x} = \frac{-x}{y}$
+1. Find the Second derivative of $f(x) = x^3 - 2x^2 + 5x - 7$
+    * $\diff{x}^2 f(x) = \diff{x}(\diff{x}(x^3 - 2x^2 + 5x - 7))$
+    * $\diff{x}(\diff{x} f(x)) = \diff{x}(\diff{x}(x^3) - \diff{x}(2x^2) + \diff{x}(5x) - \diff{x}(7))$
+    * $\diff{x}(\diff{x} f(x)) = \diff{x}(\diff{x}(x^3) - \diff{x}(2x^2) + \diff{x}(5x) - \diff{x}(7))$
+    * $\diff{x} f'(x) = \diff{x}(3x^2 - 4x + 5)$
+    * $\diff{x} f'(x) = \diff{x}(3x^2) - \diff{x}(4x) + \diff{x}(5)$
+    * $f''(x) = 6x - 4$
 
 ---
 
 ## Example 2
 
-2. Differentiate $3xy - 2y^2 = 5x$
-    * $(3x)y - 2y^2 = 5x$
-    * $\diff (3xy) - \diff (2y^2) = \diff (5x)$
-    * $[3x (\diff (y)) + y (\diff (3x))] - \diff (2y^2) = \diff (5x)$
-    * $[(3x)dy + y(3)dx] - 2(2y)dy = (5)dx$
-    * $(3x)dy + (3y)dx - (4y)dy = (5)dx$
-    * $(3x)dy - (4y)dy = (5)dx - (3y)dx$
-    * $dy(3x - 4y) = dx(5 - 3y)$
-    * $\dd[y]{x} = \frac{5 - 3y}{3x - 4y}$
+2. Find the Second derivative of $y = \frac{2x^2}{3x - 1}$
+    * $g(x) = 2x^2$
+    * $h(x) = 3x - 1$
+    * $\diff{x}^2 y = \diff{x} \frac{(3x - 1) (\diff{x} (2x^2)) - (2x^2) (\diff{x} (3x - 1))}{(3x - 1)^2}$
+    * $\diff{x}^2 y = \diff{x} \frac{(3x - 1) [\diff{x} (2x^2)] - (2x^2) [\diff{x} (3x) - \diff{x} (1)]}{(3x - 1)^2}$
+    * $\diff{x} \dd{y}{x} = \diff{x} \frac{(3x - 1)(4x) - (2x^2)(3)}{(3x - 1)^2}$
+    * $\diff{x} \dd{y}{x} = \diff{x} \frac{12x^2 - 4x - 6x^2}{(3x - 1)^2}$
+
+---
+
+## Example 2, cont.
+
+2. Find the Second derivative of $y = \frac{2x^2}{3x - 1}$
+    * $\diff{x} \dd{y}{x} = \diff{x} \frac{12x^2 - 4x - 6x^2}{(3x - 1)^2}$
+    * $\diff{x} \dd{y}{x} = \diff{x} \frac{6x^2 - 4x}{(3x - 1)^2}$
+    * $g(x) = 6x^2 - 4x$
+    * $h(x) = (3x - 1)^2$
+    * $a(u) = u^2$
+    * $u = 3x - 1$
+
+---
+
+## Example 2, cont.
+
+2. Find the Second derivative of $y = \frac{2x^2}{3x - 1}$
+    * $g(x) = 6x^2 - 4x$
+    * $h(x) = (3x - 1)^2$
+    * $a(u) = u^2$
+    * $u = 3x - 1$
+    * $\diff{x} \dd{y}{x} =$ $\frac{(3x - 1)^2 [\diff{x} (6x^2 - 4x)] - (6x^2 - 4x) (\diff{u} (u^2) (\diff{x} (3x - 1)))}{[(3x - 1)^2]^2}$
+    * $\diff{x} \dd{y}{x} =$ $\frac{(3x - 1)^2 [\diff{x} (6x^2) - \diff{x} (4x)] - (6x^2 - 4x) (\diff{u} (u^2) (\diff{x} (3x) - \diff{x} (1)))}{[(3x - 1)^2]^2}$
+
+---
+
+## Example 2, cont.
+
+2. Find the Second derivative of $y = \frac{2x^2}{3x - 1}$
+    * $g(x) = 6x^2 - 4x$
+    * $h(x) = (3x - 1)^2$
+    * $a(u) = u^2$
+    * $u = 3x - 1$
+    * $\diff{x} \dd{y}{x} =$ $\frac{(3x - 1)^2 [\diff{x} (6x^2) - \diff{x} (4x)] - (6x^2 - 4x) (\diff{u} (u^2) (\diff{x} (3x) - \diff{x} (1)))}{[(3x - 1)^2]^2}$
+    * $\dd[2]{y}{x} =$ $\frac{(3x - 1)^2 (12x - 4) - (6x^2 - 4x)(6)(3x - 1)}{(3x - 1)^4}$
+
+---
+
+## Example 2, cont.
+
+2. Find the Second derivative of $y = \frac{2x^2}{3x - 1}$
+    * $\dd[2]{y}{x} = \frac{(3x - 1)^2 (12x - 4) - (6x^2 - 4x)(6)(3x - 1)}{(3x - 1)^4}$
+    * $\dd[2]{y}{x} = \frac{4(3x - 1)^3 - 6(6x^2 - 4x)(3x - 1)}{(3x - 1)^4}$
+    * $\dd[2]{y}{x} = \frac{2(3x - 1)[2(3x - 1)^2 - 3(6x^2 - 4x)]}{(3x - 1)^4}$
+    * $\dd[2]{y}{x} = \frac{2(3x - 1)[18x^2 - 12x + 2 - 18x^2 + 12x]}{(3x - 1)^4}$
+
+---
+
+## Example 2, cont.
+
+2. Find the Second derivative of $y = \frac{2x^2}{3x - 1}$
+    * $\dd[2]{y}{x} = \frac{2(3x - 1)[18x^2 - 12x + 2 - 18x^2 + 12x]}{(3x - 1)^4}$
+    * $\dd[2]{y}{x} = \frac{4(3x - 1)}{(3x - 1)^4}$
+    * $\dd[2]{y}{x} = \frac{4}{(3x - 1)^3}$
 
 ---
 
 ## Example 3
 
-3. Differentiate $2xy - 15 = -3x^2$ to find the slope at $P(1, 6)$
-    * $(2x)y - 15 = -3x^2$
-    * $\diff (2xy) - \diff (15) = \diff (-3x^2)$
-    * $[2x \diff (y) + y \diff (2x)] - \diff (15) = \diff (-3x^2)$
-    * $(2x)dy + y(2dx) = (-6x)dx$
-    * $(2x)dy + (2y)dx = (-6x)dx$
-    * $(2x)dy = (-6x)dx - (2y)dx$
-    * $(2x)dy = dx(- 6x - 2y)$
+3. Find the second derivative of $f(x) = \frac{\sqrt{x}}{x + 3}$
+    * $g(x) = x^\frac{1}{2}$
+    * $h(x) = x + 3$
+    * $\diff{x}^2 f(x) = \diff{x} \frac{(x + 3) [\diff{x} (x^\frac{1}{2})] - (x^\frac{1}{2}) [\diff{x} (x + 3)]}{(x + 3)^2}$
+    * $\diff{x}^2 f(x) = \diff{x} \frac{(x + 3) [\diff{x} (x^\frac{1}{2})] - (x^\frac{1}{2}) [\diff{x} (x) + \diff{x} (3)]}{(x + 3)^2}$
+    * $\diff{x} f'(x) = \diff{x} \frac{(x + 3) [\diff{x} (x^\frac{1}{2})] - (x^\frac{1}{2}) [\diff{x} (x) + \diff{x} (3)]}{(x + 3)^2}$
+    * $\diff{x} f'(x) = \diff{x} \frac{(x + 3) \frac{1}{2}(x^{-\frac{1}{2}}) - x^\frac{1}{2}}{(x + 3)^2}$
 
 ---
 
 ## Example 3, cont.
 
-3. Differentiate $2xy - 15 = -3x^2$ to find the slope at $P(1, 6)$
-    * $(2x)dy = dx(- 6x - 2y)$
-    * $\dd[y]{x} = -\frac{6x + 2y}{2x}$
-    * $\dd[y]{x}_P = -\frac{6(1) + 2(6)}{2(1)}$
-    * $\dd[y]{x}_P = -\frac{6 + 12}{2}$
+3. Find the second derivative of $f(x) = \frac{\sqrt{x}}{x + 3}$
+    * $\diff{x} f'(x) = \diff{x} \frac{(x + 3) \frac{1}{2}(x^{-\frac{1}{2}}) - x^\frac{1}{2}}{(x + 3)^2}$
+    * $\diff{x} f'(x) = \diff{x} \frac{\frac{1}{2}x^{-\frac{1}{2}} (x + 3 - 2x)}{(x + 3)^2}$
+    * $\diff{x} f'(x) = \diff{x} \frac{3 - x}{2x^\frac{1}{2}(x + 3)^2}$
 
 ---
 
 ## Example 3, cont.
 
-3. Differentiate $2xy - 15 = -3x^2$ to find the slope at $P(1, 6)$\
-    * $\dd[y]{x}_P = -\frac{6 + 12}{2}$
-    * $\dd[y]{x}_P = -\frac{18}{2}$
-    * $\dd[y]{x}_P = -9$
+3. Find the second derivative of $f(x) = \frac{\sqrt{x}}{x + 3}$
+    * $g(x) = 3 - x$
+    * $h(x) = 2x^\frac{1}{2}(x + 3)^2$
+    * $u = x + 3$
+    * $\diff{x} f'(x) =$ $\frac{[2x^\frac{1}{2}(x + 3)^2] [\diff{x} (3 - x)] - (3 - x) (\diff{x} (2x^\frac{1}{2}) [\diff{u} u^2 (\diff{x} (x + 3))] + (x + 3)^2 [\diff{x} (2x^\frac{1}{2})])}{[2x^\frac{1}{2}(x + 3)^2]^2}$
+    * $\diff{x} f'(x) =$ $\frac{[2x^\frac{1}{2}(x + 3)^2] [\diff{x} (3) - \diff{x} (x)] - (3 - x) (2x^\frac{1}{2}) [\diff{u} u^2 (\diff{x} (x) + \diff{x} (3))] + (x + 3)^2 [\diff{x} (2x^\frac{1}{2})]}{[2x^\frac{1}{2}(x + 3)^2]^2}$
 
 ---
 
-## Exercises for Readers
+## Example 3, cont.
 
-* Differentiate the following:
-    * $4x^2 + 4y^2 = 20$
-    * $4xy^2 + 2y = 3x$
-    * $3y - \frac{y^4}{x^2} = 2y$
+3. Find the second derivative of $f(x) = \frac{\sqrt{x}}{x + 3}$
+    * $g(x) = 3 - x$
+    * $h(x) = 2x^\frac{1}{2}(x + 3)^2$
+    * $u = x + 3$
+    * $\diff{x} f'(x) =$ $\frac{[2x^\frac{1}{2}(x + 3)^2] [\diff{x} (3) - \diff{x} (x)] - (3 - x) (2x^\frac{1}{2}) [\diff{u} u^2 (\diff{x} (x) + \diff{x} (3))] + (x + 3)^2 [\diff{x} (2x^\frac{1}{2})]}{[2x^\frac{1}{2}(x + 3)^2]^2}$
+    * $f''(x) = \frac{[2x^\frac{1}{2}(x + 3)^2] (-1) - (3 - x) (2x^\frac{1}{2}) [2(x + 3)] + (x + 3)^2 (x^{-\frac{1}{2}})}{[2x^\frac{1}{2}(x + 3)^2]^2}$
+
+---
+
+## Example 3, cont.
+
+3. Find the second derivative of $f(x) = \frac{\sqrt{x}}{x + 3}$
+    * $f''(x) = \frac{[2x^\frac{1}{2}(x + 3)^2] (-1) - (3 - x) [(4x^\frac{1}{2})(x + 3) + (x + 3)^2 (x^{-\frac{1}{2}})]}{[2x^\frac{1}{2}(x + 3)^2]^2}$
+    * $f''(x) = \frac{-x^{-\frac{1}{2}}(x + 3)[2x(x + 3) + 4x(3 - x) + (x + 3)(3 - x)]}{4x(x + 3)^4}$
+    * $f''(x) = \frac{-[2x^2 + 6x + (12x - 4x^2) + 9 - x^2]}{4x^\frac{3}{2}(x + 3)^3}$
+    * $f''(x) = \frac{3x^2 + 18x + 9}{4x^\frac{3}{2}(x + 3)^3}$
+    * $f''(x) = \frac{3(x^2 + 6x + 3)}{4x^\frac{3}{2}(x + 3)^3}$
+    
+---
+
+## Example 4
+
+4. Given $f(x) = 12x^4 - 3x^2$, find $f''(-2)$
+    * $\diff{x}^2 f(x) = \diff{x}^2 (12x^4 - 3x^2)$
+    * $\diff{x}[\diff{x} f(x)] = \diff{x}[\diff{x} (12x^4 - 3x^2)]$
+    * $\diff{x}[\diff{x} f(x)] = \diff{x}[\diff{x} (12x^4) - \diff{x} (3x^2)]$
+    * $\diff{x} f'(x) = \diff{x}(48x^3 - 6x)$
+    * $\diff{x} f'(x) = \diff{x} (48x^3) - \diff{x} (6x)$
+    * $f''(x) = 144x^2 - 6$
+    * $f''(-2) = 144(-2)^2 - 6$
+    * $f''(-2) = 570$
+
+---
+
+## Exercise for Readers
+
+* Find the second derivative of the following:
+    * $f(x) = 3x^3 - 9x^2 + 16x - 5$
+    * $f(x) = 10x$
+    * $y = \frac{4x}{x - 7}$
+    * $y = (3x^2 - 5)^3$
+* Given the following, find $f''(-1)$
+    * $f(x) = 7x^3 - 2x$
+    * $f(x) = \frac{5x + 1}{x^2}$
 
 ---
 
@@ -128,70 +228,140 @@ $\newcommand\limit[2]{\displaystyle\lim_{#1 \to #2}}$
 
 ## Answers to Exercises
 
-* Differentiate the following: $4x^2 + 4y^2 = 20$
-    * $\diff (4x^2) + \diff (4y^2) = \diff (20)$
-    * $2(4x)dx + 2(4y)dy = 0$
-    * $(8x)dx + (8y)dy = 0$
-    * $(8y)dy = -(8x)dx$
-    * $\dd[y]{x} = \frac{-8x}{8y}$
-    * $\dd[y]{x} = \frac{-x}{y}$
+* Find the second derivative of $f(x) = 3x^3 - 9x^2 + 16x - 5$
+    * $\diff{x}^2 f(x) = \diff{x}^2 (3x^3 - 9x^2 + 16x - 5)$
+    * $\diff{x}(\diff{x} f(x)) = \diff{x}[\diff{x} (3x^3 - 9x^2 + 16x - 5)]$
+    * $\diff{x}(\diff{x} f(x)) = \diff{x}[\diff{x} (3x^3) - \diff{x} (9x^2) + \diff{x} (16x) - \diff{x} (5)]$
+    * $\diff{x} f'(x) = \diff{x} (9x^2 - 18x + 16)$
+    * $\diff{x} f'(x) = \diff{x} (9x^2) - \diff{x} (18x) + \diff{x} (16)$
+    * $f''(x) = 18x - 18$ or $f''(x) = 18(x - 1)$
 
 ---
 
-## Answers to Exercises, cont.
+## Answers to Exercises, cont. 
 
-* Differentiate the following: $4xy^2 + 2y = 3x$
-    * $\diff (4xy^2) + \diff (2y) = \diff (3x)$
-    * $[4x \diff (y^2) + y^2 \diff (4x)] + \diff (2y) = \diff (3x)$
-    * $4x(2y)dy + y^2(4)dx + (2)dy = (3)dx$
-    * $(8xy)dy + (4y^2)dx + (2)dy = (3)dx$
-    * $(8xy)dy + (2)dy = (3)dx - (4y^2)dx$
-    * $dy(8xy + 2) = dx(3 - 4y^2)$
-    * $\dd[y]{x} = \frac{3 - 4y^2}{8xy + 2}$
+* Find the second derivative of $f(x) = 10x$
+    * $\diff{x}^2 f(x) = \diff{x}^2 (10x)$
+    * $\diff{x} [\diff{x} f(x)] = \diff{x} (\diff{x} (10x))$
+    * $\diff{x} f'(x) = \diff{x} (10)$
+    * $f''(x) = 0$
 
 ---
 
-## Answers to Exercises, cont.
+## Answers to Exercises, cont. 
 
-* Differentiate the following: $3y - \frac{y^4}{x^2} = 2y$
-    * $\diff (3y) - \diff (\frac{y^4}{x^2}) = \diff (2y)$
-    * $u = y^4$
-    * $v = x^2$
-    $\diff f(x) = \frac{v (\diff u) - u (\diff v)}{v^2}$
-    * $\diff (3y) - \frac{(x^2) \diff (y^4) - (y^4) \diff (x^2)}{(x^2)^2} = \diff (2y)$
-    * $(3y)dy - \frac{(x^2) 4(y^3)dy - (y^4) 2(x)dx}{(x^2)^2} = (2)dy$
-    * $-\frac{(4x^2 y^3)dy - (2xy^4)dx}{(x^4)} = (2)dy - (3y)dy$
-
----
-
-## Answers to Exercises, cont.
-
-* Differentiate the following: $3y - \frac{y^4}{x^2} = 2y$
-    * $-\frac{(4x^2 y^3)dy - (2xy^4)dx}{(x^4)} = (2)dy - (3y)dy$
-    * $- \frac{2y^3[(2x)dy - (y)dx]}{(x^3)} = (2)dy - (3y)dy$
-    * $- 2y^3[(2x)dy - (y)dx] = dy(2 - 3y)(x^3)$
-    * $-(2x)dy - (y)dx = dy\frac{(2 - 3y)(x^3)}{2y^3}$
-    * $(-y)dx = dy\frac{(2 - 3y)(x^3)}{2y^3} + 2x(dy)$
-    * $(-y)dx = (dy)[\frac{2x^3 - 3yx^3}{2y^3} + 2x]$
-    * $\frac{(-y)}{[\frac{2x^3 - 3yx^3}{2y^3} + 2x]} = \dd[y]{x}$
+* Find the second derivative of $y = \frac{4x}{x - 7}$
+    * $g(x) = 4x$
+    * $h(x) = x - 7$
+    * $\diff{x}^2 y = \diff{x} \frac{(x - 7) (\diff{x} (4x)) - (4x) (\diff{x} (x - 7))}{(x - 7)^2}$
+    * $\diff{x} (\diff{x} y) = \diff{x} \frac{(x - 7) (\diff{x} (4x)) - (4x) (\diff{x} (x) - \diff{x} (7))}{(x - 7)^2}$
+    * $\diff{x} \dd{y}{x} = \diff{x} \frac{4(x - 7) - 4x}{(x - 7)^2}$
+    * $\diff{x} \dd{y}{x} = \diff{x} \frac{-28}{(x - 7)^2}$
 
 ---
 
-## Answers to Exercises, cont.
+## Answers to Exercises, cont. 
 
-* Differentiate the following: $3y - \frac{y^4}{x^2} = 2y$
-    * $(-y)dx = (dy)[\frac{2x^3 - 3yx^3}{2y^3} + 2x]$
-    * $\dd[y]{x} = \frac{-y}{[\frac{2x^3 - 3yx^3 + 2x(2y^3)}{2y^3}]}$
-    * $\dd[y]{x} = -y / \frac{2x^3 - 3yx^3 + 2x(2y^3)}{2y^3}$
-    * $\dd[y]{x} = -y  (\frac{2y^3}{2x^3 - 3yx^3 + 2x(2y^3)})$
+* Find the second derivative of $y = \frac{4x}{x - 7}$
+    * $\diff{x} \dd{y}{x} = \diff{x} \frac{-28}{(x - 7)^2}$
+    * $\diff{x} \dd{y}{x} = \diff{x} [-28(x - 7)^{-2}]$
+    * $u = x - 7$
+    * $\diff{u} (u^{-2}) [\diff{x} (x - 7)]$
+    * $\diff{x} \dd{y}{x} = -28 [\diff{u} (u^{-2}) [\diff{x} (x - 7)]]$
+    * $\diff{x} \dd{y}{x} = -28 [\diff{u} (u^{-2}) [\diff{x} (x) - \diff{x} (7)]]$
 
 ---
 
-## Answers to Exercises, cont.
+## Answers to Exercises, cont. 
 
-* Differentiate the following: $3y - \frac{y^4}{x^2} = 2y$
-    * $\dd[y]{x} = -y  (\frac{2y^3}{2x^3 - 3yx^3 + 2x(2y^3)})$
-    * $\dd[y]{x} = -\frac{2y^4}{2x^3 - 3yx^3 + 4xy^3}$
+* Find the second derivative of $y = \frac{4x}{x - 7}$
+    * $u = x - 7$
+    * $\diff{x} \dd{y}{x} = -28 [\diff{u} (u^{-2}) [\diff{x} (x) - \diff{x} (7)]]$
+    * $\dd[2]{y}{x} = -28 [-2(x - 7)^{-3}]$
+    * $\dd[2]{y}{x} = \frac{56}{(x - 7)^3}$
+
+
+---
+
+## Answers to Exercises, cont. 
+
+* Find the second derivative of the following: $y = (3x^2 - 5)^3$
+    * $u = 3x^2 - 5$
+    * $\diff{x}^2 y = \diff{x} [\diff{u} u^3 (\diff{x} (3x^2 - 5))]$
+    * $\diff{x} (\diff{x} y) = \diff{x} [\diff{u} u^3 (\diff{x} (3x^2) - \diff{x} (5))]$
+    * $\diff{x} \dd{y}{x} = \diff{x} [18x (u^2)]$
+    * $\diff{x} \dd{y}{x} = (18x) [\diff{u} (u^2) \diff{x} (3x^2 - 5)] + (3x^2 - 5)^2 [\diff{x} (18x)]$
+
+---
+
+## Answers to Exercises, cont. 
+
+* Find the second derivative of the following: $y = (3x^2 - 5)^3$
+    * $u = 3x^2 - 5$
+    * $\diff{x} \dd{y}{x} = (18x) [\diff{u} (u^2) \diff{x} (3x^2 - 5)] + (3x^2 - 5)^2 [\diff{x} (18x)]$
+    * $\diff{x} \dd{y}{x}$ = $(18x) [\diff{u} (u^2) \diff{x} (3x^2) - \diff{x}(5)] + (3x^2 - 5)^2 [\diff{x} (18x)]$
+    * $\dd[2]{y}{x} = 18(3x^2 - 5)[12x^2 + 3x^2 - 5]$
+    * $\dd[2]{y}{x} = 18(3x^2 - 5)[15x^2 - 5]$
+
+---
+
+## Answers to Exercises, cont. 
+
+* Find the second derivative of the following: $y = (3x^2 - 5)^3$
+    * $\dd[2]{y}{x} = 18(3x^2 - 5)[15x^2 - 5]$
+    * $\dd[2]{y}{x} = 90(3x^2 - 5)(3x^2 - 1)$
+
+---
+
+## Answers to Exercises, cont. 
+
+* Given the following, find $f''(-1)$: $f(x) = 7x^3 - 2x$
+    * $\diff{x}^2 f(x) = \diff{x}^2 (7x^3 - 2x)$
+    * $\diff{x}[\diff{x} f(x)] = \diff{x}[\diff{x} (7x^3 - 2x)]$
+    * $\diff{x}[\diff{x} f(x)] = \diff{x}[\diff{x} (7x^3) - \diff{x} (2x)]$
+    * $\diff{x} f'(x) = \diff{x} (21x^2 - 2)$
+    * $\diff{x} f'(x) = \diff{x} (21x^2) - \diff{x} (2)$
+    * $f''(x) = 42x^2$
+    * $f''(-1) = 42(-1)^2$
+    * $f''(-1) = 42$
+
+---
+
+## Answers to Exercises, cont. 
+
+* Given the following, find $f''(-1)$: $f(x) = \frac{5x + 1}{x^2}$
+    * $g(x) = 5x + 1$
+    * $h(x) = x^2$
+    * $\diff{x}^2 f(x) = \diff{x} \frac{(x^2) (\diff{x} (5x + 1)) - (5x + 1) (\diff{x} (x^2))}{(x^2)^2}$
+    * $\diff{x}^2 f(x) = \diff{x} \frac{(x^2) [\diff{x} (5x) + \diff{x} (1)] - (5x + 1) [\diff{x} (x^2)]}{(x^2)^2}$
+    * $\diff{x} f'(x) = \diff{x} \frac{5x^2 - 10x^2 + 2x}{x^4}$
+    * $\diff{x} f'(x) = \diff{x} \frac{-5x^2 + 2x}{x^4}$
+    * $\diff{x} f'(x) = \diff{x} \frac{(2 - 5x)}{x^3}$
+
+---
+
+## Answers to Exercises, cont. 
+
+* Given the following, find $f''(-1)$: $f(x) = \frac{5x + 1}{x^2}$
+    * $\diff{x} f'(x) = \diff{x} \frac{(2 - 5x)}{x^3}$
+    * $g(x) = 2 - 5x$
+    * $h(x) = x^3$
+    * $\diff{x} f'(x) = \frac{(x^3) [\diff{x} (2 - 5x)] - (2 - 5x) (\diff{x} (x^3))}{(x^3)^2}$
+    * $\diff{x} f'(x) = \frac{(x^3) [\diff{x} (2) - \diff{x} (5x)] - (2 - 5x) (\diff{x} (x^3))}{(x^3)^2}$
+    * $f''(x) = \frac{15x^3 - 5x^3 - 6x^2}{(x^6)}$
+    * $f''(x) = \frac{10x^3 - 6x^2}{x^6}$
+
+---
+
+## Answers to Exercises, cont. 
+
+* Given the following, find $f''(-1)$: $f(x) = \frac{5x + 1}{x^2}$   
+    * $f''(x) = \frac{10x^3 - 6x^2}{x^6}$
+    * $f''(x) = \frac{x^2(10x - 6)}{x^6}$
+    * $f''(x) = \frac{10x - 6}{x^4}$
+    * $f''(-1) = \frac{10(-1) - 6}{(-1)^4}$
+    * $f''(-1) = -(10 + 6)$
+    * $f''(-1) = -16$
 
 ---
 
