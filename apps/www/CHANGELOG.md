@@ -1,5 +1,17 @@
 # @nota-set/www
 
+## 2.3.0
+
+### Minor Changes
+
+- aa0ea20: Added Lesson 4 (elementary-differentiation/calc12)
+- cf599d0: Add Lesson 6 / Quiz (elem-differentiation/calc12)
+- ec7bc36: feat(www): add Lesson 7 (derivative-elem/calc12) & build(www/docs): update astro
+- 6c5ab90: Add Lesson 3 (elementary-diff / calc12)
+- 180ce09: Added Lesson 5 (elementary-differentiation/calc12)
+- cadfef9: Added Lesson 3 (elementary-differentiation/calc12)
+- 06d9965: Added Lesson 1 (Elementary Differentiation / calc12)
+
 ## 2.2.0
 
 ### Minor Changes

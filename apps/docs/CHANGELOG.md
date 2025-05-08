@@ -1,5 +1,11 @@
 # @nota-set/docs
 
+## 0.0.3
+
+### Patch Changes
+
+- ec7bc36: feat(www): add Lesson 7 (derivative-elem/calc12) & build(www/docs): update astro
+
 ## 0.0.2
 
 ### Patch Changes
