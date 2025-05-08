@@ -10,11 +10,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { projectList } from "@/lib/content";
-import {
-  forwardRef,
-  type ComponentPropsWithoutRef,
-  type ComponentRef,
-} from "react";
+import React from "react";
 
 export function NavMenu() {
   return (
@@ -80,8 +76,8 @@ export function NavMenu() {
   );
 }
 
-const ListItem = forwardRef<ComponentRef<"a">, ComponentPropsWithoutRef<"a">>(
-  ({ className, title, children, ...props }, ref) => {
+const ListItem =
+  ({ className, title, children, ref, ...props }: React.ComponentProps<"a">) => {
     return (
       <li>
         <NavigationMenuLink asChild>
@@ -101,6 +97,5 @@ const ListItem = forwardRef<ComponentRef<"a">, ComponentPropsWithoutRef<"a">>(
         </NavigationMenuLink>
       </li>
     );
-  }
-);
+}
 ListItem.displayName = "ListItem";
