@@ -1,16 +1,19 @@
 # ***Nota-Set***
 A series of notes & presentations, provided by Hyperion University
 
-## New for v2.2.0
+## New for v2.3.0
 
 ### Additions / Changes
 
 #### @nota-set/www
-* Limits (Calculus 12)
-* Updated to Astro 5.5.2
+
+- Elementary Differentiation (Calculus 12)
+- Migrated to Tailwind v4
+- Update Astro to 5.7.10
 
 #### @nota-set/docs
-* Updated to Astro 5.5.2
+
+- Update Astro to 5.7.10
 
 ## **Notes List:**
 * ### Social Studies 10
@@ -52,27 +55,41 @@ A series of notes & presentations, provided by Hyperion University
             - Limits, Lessons 1-3
     * Section II: Differential Calculus
         - Unit III: The Derivative (w/ Elementary Functions)
-            - Differentiation Rules
-            - Higher Order Derivation
-            - Implicit Differentiation
+            - Differentiation Rules, Lesson 1-5
+            - Higher Order Derivation, Lesson 6
+            - Implicit Differentiation, Lesson 7
         - Unit IV: The Derivative (w/ Transcendental Functions)
-            - Trigonometric Differentiation
-            - Exponential & Logarithmic Differentiation
+            - Trigonometric Differentiation, Lesson 1-3
+            - Exponential & Logarithmic Differentiation, Lesson 4 & 5
         - Unit V: Extreme Values and Curve Sketching
-            - Even / Odd Functions
-            - Local Extrema & Intervals of Increase / Decrease
-            - Concavity and Points of Inflection
-            - Optimization Problems
-            - Asymptotes (Vertical, Horizontal & Oblique)
+            - Even / Odd Functions, Lesson 1 & 2
+            - Local Extrema & Intervals of Increase / Decrease, Lesson 3
+            - Concavity and Points of Inflection, Lesson 4
+            - Optimization Problems, Lesson 5
+            - Asymptotes (Vertical, Horizontal & Oblique), Lesson 6-8
         - Unit VI: Applications of Differential Calculus
-            - Kinematics (Distance, Speed & Acceleration)
-            - Related Rates
-            - Economics & Margins
-            - Exponential Growth and Decay
-            - Newton's Method (Roots of Polynomials)
+            - Kinematics (Distance, Speed & Acceleration), Lesson 1
+            - Related Rates, Lesson 2 & 3
+            - Economics & Margins, Lesson 4
+            - Exponential Growth and Decay, Lesson 5
+            - Newton's Method (Roots of Polynomials), Lesson 6
     * Section III: Integral Calculus
-        - Unit VII: Integrals and Integration Methods
-        - Unit VIII: Applications of Integral Calculus
+        - Unit VII: Antiderivatives and Area
+            - The Antiderivative
+            - Signed Area
+            - Area Between Curves
+            - Area Using Numerical Methods
+            - Fundamental Theorem of Calculus
+            - Substitution
+            - Partial Fractions
+            - Integration By Parts & DI Method 
+        - Unit VIII: Methods of Integrations and Applications of Integral Calculus
+            - Fundamental Theorem of Calculus
+            - Substitution
+            - Partial Fractions
+            - Integration By Parts & DI Method 
+            - Volume of Revolution
+            - Differential Equations & Initial Value Problems
 * ### Political Studies (coming soon)
     - Unit I: Government
     - Unit II: Political Philosophy
@@ -154,24 +171,64 @@ A series of notes & presentations, provided by Hyperion University
             - Esters
     - Unit VII: Energy and Matter
         - Temperature
-        = Separation of Matter
-
-## Future Additions
-
+        - Separation of Matter
 * ### Chemistry 12
     - Unit Ia: Chemistry 11 Review
         - Stoichiometry
         - Atomic Theory
         - Other Forms of Reactions
-            - Net / Complete Ionic Eq.
     - Unit Ib: Reaction Kinetics
         - Reaction Rates
         - Factors affecting Reaction Rates
         - Collision Theory
+        - Enthalpy Changes ($\Delta H$) in Chemical Reactions
+        - Kinetic / Potential Energy Distributions
+        - Activation Energies
+        - Reaction Mechanisms
+        - Energy Diagram of a Reaction Mechanism
+        - Effects and Applications of Catalysts
     - Unit II: Equilibrium
-    - Unit III: TBD
-    - Unit IV: TBD
-    - Unit V: TBD
+        - Chemical Equilibrium
+        - Spontaneity of Reactions
+        - Le Chatelierʼs Principle
+        - Equilibrium Constant ($K_{eq}$)
+    - Unit III: Solubility / Solubility Equilibrium
+        - Solubility and Ion Concentrations
+        - Predicting the Solubility of Salts
+        - Writing Formula, Complete and Net Ionic Equations
+        - Precipitation Reactions
+        - The Solubility Product ($K_{sp}$)
+        - Applying Solubility Principles to Chloride Titrations
+        - The Common Ion Effect
+    - Unit IV: Acid-Base Equilibrium
+        - Arrhenius Definition (Strong Acid / Strong Base)
+        - Truth of Aqueous Hydrogen Cations (Background Theory)
+        - Brønsted-Lowry Definition 
+        - Acid-Base Equilibrium
+        - Water Equilibrium Constant ($K_w$)
+        - Acid Equilibrium Constant ($K_a$)
+        - Base Equilibrium Constant ($K_b$)
+        - Relative Strengths of Acids and Bases
+        - pH and pOH
+        - Mixtures of Strong Acids and Bases
+        - Hydrolysis
+        - Acid–Base Titrations
+        - Indicators
+        - Buffers
+        - Applied Acid–Base Chemistry
+    - Unit V: Redox Reactions / Electrochemistry
+        - Introduction
+        - Oxidation Numbers
+        - Spontaneity of a Redox Reaction
+        - Half–Reactions
+        - Redox Equations (Half–Reactions / Oxidation Numbers)
+        - Redox Titrations
+        - The Electrochemical Cell
+        - Standard Reduction Potentials
+        - Selecting Preferred Reactions
+        - Applied Electrochemistry
+        - Corrosion of Metals: Cause and Prevention
+        - Electrolysis
 * ### Physics 12
     - Unit I: Vectors & Vector Arithmetic
         - Addition of Non-Parallel Vectors
@@ -181,6 +238,16 @@ A series of notes & presentations, provided by Hyperion University
         - 'Change of Basis' [$(\hat{i}, \hat{j}) \mapsto (\hat{u}, \hat{v})$]
         - Force of Friction on Inclined Planes
         - Dynamical Systems on Inclined Planes
+    - Unit III: Equilibrium
+        - Translational Equilibrium
+        - Rotational Equilibrium & Torque
+        - Static Equilibrium
+        - Diving Board Problems
+    - Unit IV: Momentum
+    - Unit Va: Circular Motion
+    - Unit Vb: Gravitation
+    - Unit VI: Electrostatics
+    - Unit VII: Electromagnetic Induction
 
 ## What's inside?
 
