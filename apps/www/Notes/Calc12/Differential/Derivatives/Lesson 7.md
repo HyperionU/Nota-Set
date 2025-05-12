@@ -120,7 +120,7 @@ $\newcommand\limit[2]{\displaystyle\lim_{#1 \to #2}}$
 
 ---
 
-# [Next Lesson](../Trancendentals/Lesson%021)
+# [Next Unit](../Trancendentals/Lesson%201)
 
 <!--_footer: Next page for exercise answers! -->
 
@@ -195,4 +195,4 @@ $\newcommand\limit[2]{\displaystyle\lim_{#1 \to #2}}$
 
 ---
 
-# [Next Lesson](../Trancendentals/Lesson%021)
+# [Next Unit](../Trancendentals/Lesson%201)
