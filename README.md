@@ -1,19 +1,15 @@
 # ***Nota-Set***
 A series of notes & presentations, provided by Hyperion University
 
-## New for v2.3.0
+## New for v2.4.0
 
 ### Additions / Changes
 
 #### @nota-set/www
 
-- Elementary Differentiation (Calculus 12)
-- Migrated to Tailwind v4
-- Update Astro to 5.7.10
+- Transcendental Differentiation (Calculus 12)
 
-#### @nota-set/docs
-
-- Update Astro to 5.7.10
+#### @nota-set/docs (No Updates)
 
 ## **Notes List:**
 * ### Social Studies 10
@@ -235,7 +231,7 @@ A series of notes & presentations, provided by Hyperion University
         - Navigation Problems
         - Relativistic Problems
     - Unit II: Vector Mechanics
-        - 'Change of Basis' [$(\hat{i}, \hat{j}) \mapsto (\hat{u}, \hat{v})$]
+        - 'Change of Basis' $(\hat{i}, \hat{j}) \mapsto (\hat{u}, \hat{v})$
         - Force of Friction on Inclined Planes
         - Dynamical Systems on Inclined Planes
     - Unit III: Equilibrium
