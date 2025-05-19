@@ -1,5 +1,20 @@
 # @nota-set/www
 
+## 2.4.0
+
+### Minor Changes
+
+- 63998a5: feat: add Quiz (derivative-trans/calc12)
+- 1121f03: feat: add Lesson 2 (derivative-trans/calc12)
+- 054b4cc: feat: add Lesson 4 (derivative-trans/calc12)
+- c0332a4: feat: add Lesson 3 (derivative-trans/calc12)
+- bad3250: feat: add Lesson 1 (derivative-trans/calc12)
+- bea6b06: feat: add Lesson 5 (derivative-trans/calc12)
+
+### Patch Changes
+
+- 1a99445: Fixed links for Lesson 7 (derivative-elem/calc12)
+
 ## 2.3.0
 
 ### Minor Changes
