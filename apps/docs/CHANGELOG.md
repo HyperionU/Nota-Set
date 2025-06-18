@@ -1,5 +1,12 @@
 # @nota-set/docs
 
+## 0.0.4
+
+### Patch Changes
+
+- ac2761f: build: update astro
+- 3b6af83: build: update astro and lockfile
+
 ## 0.0.3
 
 ### Patch Changes

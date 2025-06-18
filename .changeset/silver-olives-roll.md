@@ -1,5 +1,0 @@
----
-"@nota-set/www": minor
----
-
-feat: add Lesson 2 (extrema/calc12)

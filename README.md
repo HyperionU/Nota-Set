@@ -1,15 +1,18 @@
 # ***Nota-Set***
 A series of notes & presentations, provided by Hyperion University
 
-## New for v2.4.0
+## New for v2.5.0
 
 ### Additions / Changes
 
 #### @nota-set/www
 
-- Transcendental Differentiation (Calculus 12)
+- Extrema and Curve Sketching (Calculus 12)
+- Update Astro to 5.9.x
 
-#### @nota-set/docs (No Updates)
+#### @nota-set/docs
+
+- Update Astro to 5.9.x
 
 ## **Notes List:**
 * ### Social Studies 10

@@ -1,5 +1,24 @@
 # @nota-set/www
 
+## 2.5.0
+
+### Minor Changes
+
+- 8db2fec: feat: add Lesson 7 (extrema/calc12)
+- 50baf8b: feat: add Lesson 8 (extrema/calc12)
+- cc233cd: feat: add Lesson 3 (extrema/calc12)
+- bc4f9ff: feat: add Lesson 5 (extrema/calc12)
+- 4ec5e69: feat: add Lesson 1 (extrema/calc12)
+- e234dc4: feat: add Lesson 6 (extrema/calc12)
+- ac366c3: feat: add Lesson 2 (extrema/calc12)
+- 27fa3ce: feat: add Lesson 4 (extrema/calc12)
+- 1663dfb: feat: add Quiz (extrema/calc12)
+
+### Patch Changes
+
+- ac2761f: build: update astro
+- 3b6af83: build: update astro and lockfile
+
 ## 2.4.0
 
 ### Minor Changes
