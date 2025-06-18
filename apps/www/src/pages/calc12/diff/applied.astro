@@ -1,0 +1,48 @@
+---
+import CourseCard from "@/components/CourseCard.astro";
+import ItemCard from "@/components/ItemCard.astro";
+import SideLayout from "@/layouts/SideLayout.astro";
+---
+
+<SideLayout title="Differental Calculus | Applications">
+    <main class="grid items-center grid-cols-3 gap-4">
+        <header class="text-center col-span-3 p-8">
+          <h1>Unit VI: Applications</h1>
+        </header>
+        <ItemCard selector="Lesson" itemNumber={1} itemName="Physical Applications" ref="../../slides/Calc12/Differential/Applications/Lesson 1" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
+        <ItemCard selector="Lesson" itemNumber={2} itemName="Rates of Change I: Area / Volume" ref="../../slides/Calc12/Differential/Applications/Lesson 2" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
+        <ItemCard selector="Lesson" itemNumber={3} itemName="Rates of Change II: Triangles" ref="../../slides/Calc12/Differential/Applications/Lesson 3" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
+        <CourseCard course="Practice Quiz" ref="../../slides/Calc12/Differential/Applications/Quiz" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </CourseCard>
+        <ItemCard selector="Lesson" itemNumber={4} itemName="Economic Applications" ref="../../slides/Calc12/Differential/Applications/Lesson 4" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
+        <ItemCard selector="Lesson" itemNumber={5} itemName="Biological Sciences Applications" ref="../../slides/Calc12/Differential/Applications/Lesson 5" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
+        <ItemCard selector="Lesson" itemNumber={6} itemName="Newton's Method" ref="../../slides/Calc12/Differential/Applications/Lesson 6" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
+    </main>
+</SideLayout>
