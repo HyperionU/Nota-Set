@@ -1,5 +1,21 @@
 # @nota-set/www
 
+## 2.6.0
+
+### Minor Changes
+
+- 5349c1a: feat: add Lesson 2 (applied-diff/calc12)
+- 0eb0e99: feat: add Quiz (applied-diff/calc12)
+- 8461433: feat: add Lesson 6 (applied-diff/calc12)
+- e59a236: feat: add Lesson 1 (applied-diff/calc12)
+- e18bdbb: feat: add Lesson 5 (applied-diff/calc12)
+- 9db6c7d: feat: add Lesson 4 (applied-diff/calc12)
+- 8eeafca: feat: add Lesson 3 (applied-diff/calc12)
+
+### Patch Changes
+
+- f2d5f8d: build: update astro
+
 ## 2.5.0
 
 ### Minor Changes
