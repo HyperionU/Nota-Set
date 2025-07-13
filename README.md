@@ -74,21 +74,18 @@ A series of notes & presentations, provided by Hyperion University
             - Newton's Method (Roots of Polynomials), Lesson 6
     * Section III: Integral Calculus
         - Unit VII: Antiderivatives and Area
-            - The Antiderivative
-            - Signed Area
-            - Area Between Curves
-            - Area Using Numerical Methods
-            - Fundamental Theorem of Calculus
-            - Substitution
-            - Partial Fractions
-            - Integration By Parts & DI Method 
+            - The Antiderivative, Lesson 1
+            - Signed Area, Lesson 2
+            - Fundamental Theorem of Calculus, Lesson 3
+            - Area Between Curves, Lesson 4
+            - Area Using Numerical Methods, Lesson 5
         - Unit VIII: Methods of Integrations and Applications of Integral Calculus
-            - Fundamental Theorem of Calculus
-            - Substitution
-            - Partial Fractions
-            - Integration By Parts & DI Method 
-            - Volume of Revolution
-            - Differential Equations & Initial Value Problems
+            - Fundamental Theorem of Calculus, Lesson 1
+            - Substitution, Lesson 2
+            - Partial Fractions, Lesson 3
+            - Integration By Parts & DI Method, Lesson 4
+            - Volume of Revolution, Lesson 5
+            - Differential Equations & Initial Value Problems, Lesson 6
 * ### Political Studies (coming soon)
     - Unit I: Government
     - Unit II: Political Philosophy
@@ -222,12 +219,6 @@ A series of notes & presentations, provided by Hyperion University
         - Half–Reactions
         - Redox Equations (Half–Reactions / Oxidation Numbers)
         - Redox Titrations
-        - The Electrochemical Cell
-        - Standard Reduction Potentials
-        - Selecting Preferred Reactions
-        - Applied Electrochemistry
-        - Corrosion of Metals: Cause and Prevention
-        - Electrolysis
 * ### Physics 12
     - Unit I: Vectors & Vector Arithmetic
         - Addition of Non-Parallel Vectors
