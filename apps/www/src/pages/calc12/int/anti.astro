@@ -4,30 +4,35 @@ import ItemCard from "@/components/ItemCard.astro";
 import SideLayout from "@/layouts/SideLayout.astro";
 ---
 
-<SideLayout title="Nota-Set | Calculus 12">
+<SideLayout title="Integral Calculus | Antiderivatives">
     <main class="grid items-center grid-cols-3 gap-4">
         <header class="text-center col-span-3 p-8">
-          <h1>Calculus 12</h1>
+          <h1>Unit VII: Antiderivatives and Area</h1>
         </header>
-        <ItemCard selector="Unit" itemNumber={1} itemName="Pre-Calculus" ref="calc12/precalc">
+        <ItemCard selector="Lesson" itemNumber={1} itemName="The Antiderivative" ref="../../slides/Calc12/Integral/Antiderivatives/Lesson 1" stable="RC">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
         </ItemCard>
-        <ItemCard selector="Unit" itemNumber={2} itemName="Limits" ref="calc12/limits">
+        <ItemCard selector="Lesson" itemNumber={2} itemName="Signed Area" ref="../../slides/Calc12/Integral/Antiderivatives/Lesson 2" stable="Unstable">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
         </ItemCard>
-        <CourseCard course="Units 3-6: Differentiation" ref="calc12/diff">
+        <ItemCard selector="Lesson" itemNumber={3} itemName="Fundamental Theorem of Calculus" ref="../../slides/Calc12/Integral/Antiderivatives/Lesson 3" stable="Unstable">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
-        </CourseCard>
-        <CourseCard course="Units 7-8: Integration" ref="calc12/int" stable="Unstable">
+        </ItemCard>
+        <ItemCard selector="Lesson" itemNumber={4} itemName="Area Between Curves" ref="../../slides/Calc12/Integral/Antiderivatives/Lesson 4" stable="Unstable">
             Math isn't just about numbers and symbols; it teaches us valuable skills
             like connecting ideas, being creative, communicating effectively,
             visualizing concepts, and reasoning logically.
-        </CourseCard>
+        </ItemCard>
+        <ItemCard selector="Lesson" itemNumber={5} itemName="Area using Numerical Methods" ref="../../slides/Calc12/Integral/Antiderivatives/Lesson 5" stable="Unstable">
+            Math isn't just about numbers and symbols; it teaches us valuable skills
+            like connecting ideas, being creative, communicating effectively,
+            visualizing concepts, and reasoning logically.
+        </ItemCard>
     </main>
 </SideLayout>
