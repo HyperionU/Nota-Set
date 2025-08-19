@@ -297,6 +297,7 @@ $\newcommand\dd[2][]{\displaystyle\frac{d#1}{d#2}}$
     * $\frac{1}{7} \ln |x| + C_1 + \frac{1}{7} \int u^{-2} du$
     * $\frac{1}{7} \ln |x| + C_1 - \frac{1}{7} u^{-1} + C_2$
     * $\frac{1}{7} \ln |x| - \frac{1}{7} u^{-1} + C$
+    * $\frac{1}{7} \ln |x| - \frac{1}{49x} + C$
     * *Huh. That was easier than I thought.*
 
 ---
