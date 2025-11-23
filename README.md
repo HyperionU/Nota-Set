@@ -1,18 +1,18 @@
 # ***Nota-Set***
 A series of notes & presentations, provided by Hyperion University
 
-## New for v2.6.0
+## New for v2.7.0
 
 ### Additions / Changes
 
 #### @nota-set/www
 
-- Applications of Differentiation (Calculus 12)
-- Update Astro to 5.11.x
+- Antiderivatives and Area (Calculus 12)
+- Update Astro to 5.16.x
 
 #### @nota-set/docs
 
-- Update Astro to 5.11.x
+- Update Astro to 5.16.x
 
 ## **Notes List:**
 * ### Social Studies 10

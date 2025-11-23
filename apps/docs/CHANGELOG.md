@@ -1,5 +1,11 @@
 # @nota-set/docs
 
+## 0.0.6
+
+### Patch Changes
+
+- ed9b23e: build: update astro
+
 ## 0.0.5
 
 ### Patch Changes

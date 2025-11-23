@@ -1,5 +1,19 @@
 # @nota-set/www
 
+## 2.7.0
+
+### Minor Changes
+
+- 65bcc66: feat: add Lesson 1 (antiderivatives/calc12)
+- b03d6a9: feat: add Lesson 4 (antiderivatives / calc12)
+- bfd11b2: feat: add Lesson 2 (antiderivatives/calc12)
+- 131e75b: feat: add Lesson 3 (antiderivatives/calc12)
+- 90c33bc: feat(www): add Lesson 5 (antiderivatives/calc12)
+
+### Patch Changes
+
+- ed9b23e: build: update astro
+
 ## 2.6.0
 
 ### Minor Changes
