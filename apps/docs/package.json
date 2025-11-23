@@ -11,9 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
-    "@astrojs/starlight": "^0.34.5",
-    "astro": "^5.11.0",
+    "@astrojs/mdx": "^4.3.12",
+    "@astrojs/starlight": "^0.36.2",
+    "astro": "^5.16.0",
     "sharp": "^0.33.5",
     "starlight-heading-badges": "^0.4.1",
     "starlight-package-managers": "^0.10.0"
