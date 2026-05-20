@@ -120,6 +120,10 @@ $\newcommand\dd[2][]{\displaystyle\frac{d#1}{d#2}}$
 
 ---
 
+# [Practice Quiz](Quiz)
+
+Or
+
 # [Next Lesson](Lesson%205)
 
 <!--_footer: Next page for exercise answers! -->
@@ -173,5 +177,9 @@ $\newcommand\dd[2][]{\displaystyle\frac{d#1}{d#2}}$
     * $\int_0^\frac{\pi}{2} 2x \cos x dx = \pi - 2$
 
 ---
+
+# [Practice Quiz](Quiz)
+
+Or
 
 # [Next Lesson](Lesson%205)
