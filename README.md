@@ -1,18 +1,14 @@
 # ***Nota-Set***
 A series of notes & presentations, provided by Hyperion University
 
-## New for v2.7.0
+## New for v2.8.0
 
 ### Additions / Changes
 
 #### @nota-set/www
 
-- Antiderivatives and Area (Calculus 12)
-- Update Astro to 5.16.x
-
-#### @nota-set/docs
-
-- Update Astro to 5.16.x
+- Applications of Integration (Calculus 12)
+- Update Astro to 6.3.x
 
 ## **Notes List:**
 * ### Social Studies 10
@@ -43,7 +39,7 @@ A series of notes & presentations, provided by Hyperion University
         - Unit VI: Exponentials & Rationals, Lessons 1-4
         - Unit VII: Logarithms Unit, Lessons 1-6
     - Unit VIII: Function Operations, Lessons 1 & 2
-* ### Calculus 12 (coming soon)
+* ### Calculus 12
     * Section I: Preparation
         - Unit I: Functions, Models, Equations and Inequalities
             - Functions, Models & Equations, Lessons 1-4

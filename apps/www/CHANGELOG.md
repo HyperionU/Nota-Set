@@ -1,5 +1,21 @@
 # @nota-set/www
 
+## 2.8.0
+
+### Minor Changes
+
+- fad6069: feat: add Lesson 1 (methods-integration/calc12)
+- e97160b: feat(www): add Lesson 2 (methods-integration/calc12)
+- 2f66965: feat: add Lesson 5 (methods-integration/calc12)
+- 7b60920: feat: add Practice Quiz
+- f8cb511: feat(www): add Lesson 4 (methods-integration/calc12)
+- 215ad87: feat: add Lesson 3 (methods-integration/calc12)
+- 3abcf83: feat: add Lesson 6 (methods-integration/calc12)
+
+### Patch Changes
+
+- f8cb511: build: update Astro to v6.3
+
 ## 2.7.0
 
 ### Minor Changes
